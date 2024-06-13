@@ -1,0 +1,79 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'frontend/js/acnid/capture.js' %}" defer></script>
+<script src="{% static 'frontend/js/acnid/capture.js' %}" defer></script>
+
+<style>
+.section {
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+	.section h2 {
+		margin-top: 0;
+	}
+	.date-widget select {
+		display: inline-block;
+		width: auto;
+		margin-right: 10px;
+	}
+</style>
+
+<div id="csrf-token" data-csrf-token="{{ csrf_token }}"></div>
+<div class="p-2 m-2 w-100 d-flex justify-content-center">
+	<div class="d-flex flex-column">
+		<select name="caso" class="form-control my-2" required="" id="id_caso">
+			{% for item in data %}
+			<option value="{{item.pk}}" {% if forloop.first %}selected{% endif %}>{{item}}</option>
+			{% endfor %}
+
+		</select>
+		<ul class="nav nav-tabs" id="tabList" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="datosGenerales-tab" 
+					data-toggle="tab" href="#datosGenerales" role="tab" 
+					aria-controls="datosGenerales" aria-selected="true">
+					Datos generales</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="datosMediaFiliacion-tab" 
+					data-toggle="tab" href="#datosMediaFiliacion" role="tab" 
+					aria-controls="datosMediaFiliacion" aria-selected="false">
+					Datos media filiacion</a>
+			</li>
+		</ul>
+			<div class="tab-content" id="tabContentContainer">
+				<div class="tab-pane fade show active" id="datosGenerales" role="tabpanel" aria-labelledby="datosGenerales-tab">
+					<h2>Datos Generales ACNID</h2>
+					{% csrf_token %}
+					<form method="post" id="formDatosGeneralesAcnid" novalidate>
+						<div class="d-flex flex-row flex-wrap">
+						{% for field in form.formDatosGenerales %}
+						<div class="form-group m-2">
+							{{ field.as_field_group }}
+						</div>
+						{% endfor %}
+						</div>
+						<button type="submit" class="btn btn-primary">Guardar</button>
+					</form>
+				</div>
+				<div class="tab-pane fade" id="datosMediaFiliacion" role="tabpanel" aria-labelledby="datosMediaFiliacion-tab">
+					<h2>Media Filiacion</h2>
+					{% csrf_token %}
+					<form method="post" id="formMediaFiliacion" novalidate>
+						<div class="d-flex flex-row flex-wrap">
+							{% for field in form.formMediaFiliacion %}
+							<div class="form-group m-2">
+								{{ field.as_field_group }}
+							</div>
+							{% endfor %}
+						</div>
+						<button type="submit" class="btn btn-primary">Guardar</button>
+					</form>
+				</div>
+			</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+Columna Express (CPM):
+
+- Nombre,
+- Edad
+- Sexo,
+- Fecha desaparicion
+- Lugar ultima observacion
+
+proceso acnid contra reporte de persona desaparecida para rastreo rapido:
+1. Filtrar en NR (No reconocidos)
+2. Filtrar fecha desaparicion
+3. Filtrado por sexo
+4. Filtrado por tatuajes,
+4.1 Verifica rango de eda estimado, cercano al rango, dependiendo de quien dictamino edad (descartar o no)
+5. se;as particualres
+6. dentales.
+7. Se;aes secundarias: Complexion, estatura, talla del pie, etc...
+
+
+Info llega en documento fisico a ACNID,
+ACNID Captura, para propositos de metricas,
+si cierta aerea no ha proporcionado info, AcNID
+indica areas restantes.
+
+

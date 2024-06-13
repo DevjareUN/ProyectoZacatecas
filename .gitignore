@@ -1,0 +1,9 @@
+*.pycache
+*/img/*
+*.png
+*.jpg
+*.jpeg
+bdpm/api/migrations/*
+*/__pycache__/*
+*__pycache__
+fill_catalogues.py

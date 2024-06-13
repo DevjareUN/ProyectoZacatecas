@@ -1,0 +1,43 @@
+{% extends 'frontend/base.html' %}
+{% block content %}
+<div class="p-2 m-2 w-100 d-flex justify-content-center">
+	<div class="d-flex flex-row">
+		<h1>Home ML, welcome {{request.user}}<h1>
+		<table id="table-home" class="table thead-dark">
+			<thead>
+				<!-- HEADERS -->
+				<tr>
+					<td>Edit</td>
+					<td>Delete</td>
+					{% for key, value in meta.items %}
+					<td>{{key}}</td>
+					{% endfor %}
+					<!-- Filter boxes -->
+					<tr>
+						<td></td>
+						<td></td>
+						{% for key, value in meta.items %}
+						<td>
+							{% if value.catalogue %}
+							<select onchange="filterBy(event, '{{key}}')">
+								<option value="all">All</option>
+								{% for option in value.catalogue %}
+								<option value="{{ option }}">{{ option }}</option>
+								{% endfor %}
+							</select>
+							{% else %}
+							<input id="filter-by-{{key}}" type="text" class="form-control" placeholder="Filter by {{key}}" onchange="filterBy(event, '{{key}}')">
+							{% endif %}
+						</td>
+						{% endfor %}
+					</tr>
+				</tr>
+			</thead>
+			<tbody id="table-home-body">
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="container-fluid d-flex justify-content-center align-items-start h-100 w-100 overflow-auto m-3" id="table-container">
+</div>
+{% endblock %}

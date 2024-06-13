@@ -1,0 +1,309 @@
+# MedLeg, maneja genetica y quimica forense
+# MedLeg determina que muestras aplicar, y dependiendo de la muestra, se obtiene dicha muestra en genetica, o QF
+# Cada area tiene poder de iniciar una carpeta de investigacion. o CPM en mi caso.
+
+
+CarpetaInvestigacion
+===============================================================
+cui
+amp
+===============================================================
+
+
+Indicios
+===============================================================
+identificador uinco
+nombre_indicio
+descripcion
+area_correspondiente
+===============================================================
+
+
+Pendiente Clasificacion
+===============================================================
+FECHA DE INGRESO
+SEXO DEFINITIVO
+EDAD DEFINITIVA
+FOSAS CLANDESTINAS  SI EL CPM FUE RECUPERADO DE INHUMACION IRREGULAR
+FOSAS CLANDESTINAS  TIPO DE INHUMACION IRREGULAR
+FOSAS CLANDESTINAS  CONTENIDO DE NUMERO DE UNDIVIDUOS
+FOSAS CLANDESTINAS  RELACION ANATOMICA
+INVENTARIO OSEO  (APLICA UNICAMENTE A OSAMENTAS Y A ELEMENTOS OSEOS)  
+NOTAS COMPLEMENTARIAS EN CASO DE INCOMPLETOS
+FASE CADAVERICA
+CIRCUNSTANCIAS EXTRAORDINARIAS DEL CPM
+CRONOTANATODX  INTERVALO POST-MORTEM
+OBJETOS / ELEMENTOS  ASOCIADOS  OBJETOS  VARIOS
+OBJETOS / ELEMENTOS  ASOCIADOS  MEDICOS / QUIRURGICOS
+OBJETOS / ELEMENTOS  ASOCIADOS  BALISTICOS / ARMAS / TACTICOS  MATERIALES DE GUERRA
+OBJETOS / ELEMENTOS  ASOCIADOS  MENSAJES DE CRIMEN ORGANIZADO
+OBJETOS / ELEMENTOS  ASOCIADOS  VEHICULOS DE  MOTOR
+DISTRITO JUDICIAL
+NOMBRE DEL FISCAL AMP  (LIC)
+NOMBRE DEL PERSONAL Y CARGO DE QUIEN REALIZA OFICIO DE SOLICITUD DE NECROPSIA
+CUI / EXP
+CAUSA DE MUERTE
+CERTIFICADO  DE DEFUNCION (FOLIO)
+SEMEFO MUNICIPIO DONDE SE REALIZA LA NECRPSIA
+CRIMINALISTA  DE CAMPO
+TIPO DE REGISTRO OBTENIDO  ANTECEDENTES OBSERVACIONES
+RECONOCIMIENTO  FECHA
+MEDIO DE RECONOCIMIENTO  SISTEMA DE IDENTIFICACION FPRESNSE
+AREA QUE ATIENDE Y DA EL POSITIVO EN EL RECONOCIMIENTO
+=========================================================================================
+
+
+ReporteDesapareicion
+=========================================================================================
+=========================================================================================
+
+- Acordar con Dra. Norma y validar propuesta con sus comentarios.
+Hallazgo
+=========================================================================================
+CLASIFICACION GRAL  DEL TIPO DE EVENTO
+TIPO DE EVENTO  ESPECIFICO
+ESTADO DE LA REPUBLICA MEXICANA
+MUNICIPIO
+LOCALIDAD COMUNIDAD RANCHERIA
+LUGAR DE LOS HECHOS DESCRIPCION AMPLIA DEL SITIO
+COORDENADAS
+SITIO TIPO
+SITIO PROPIEDAD
+SITIO CLIMA
+SITIO TEMPORALIDAD DEL DIA
+SITIO AMBIENTE / ESPACIO)
+SITIO ESPACIO ESPECIFICO
+SITIO COLOCACION DEL CPM
+CIRCUNSTANCIAS DEL  HALLAZGO DEL CPM
+CIRCUNSTANCIAS DEL CPM AL HALLAZGO   VESTIMENTA
+CICUNSTANCIAS DEL CPM AL HALLAZGO  CIRCUNTANCIAS EXTRAORDINARIAS
+DENTRO DE... CONTENIDO EN… SOBRE DE…
+POSICION CADAVERICA
+POSICION CADAVERICA DEACUERDO A FLEXION DEL CUERPO
+=========================================================================================
+
+
+CasoPM
+=========================================================================================
+CASO POSTMORTEM  RELATIVO AL EVENTO => ID
+SEDE ACNID  REGISTRO DEL CNI  EN REGION ACNID
+NUMERO DE CONTROL INTERNO REGISTRO ACNID
+ESTATUS  ACTUAL
+INDICIO
+FOTO ROSTRO, CASO POSTMORTEM
+FOTO PANORAMICA, TOTAL DE INTEGRIDAD  DE CASO POSTMORTEM
+INTEGRIDAD DE CASO POSTMORTEM  (DESCRIPCION DE INTEGRIDAD)
+AMP / UND DE INV QUE LLEVA LA CARPETA DE INVESTIGACION
+EDAD ESTIMACION POR  ACNID APARIENCIA FISONOMICA
+=========================================================================================
+
+
+Medicina legal
+=========================================================================================
+NUMERO  DE CONTROL  MED LEG
+SEXO ESTIMADO POR MED LEG
+EDAD ESTIMACION  POR MEDLEG
+MEDICO LEGISTAjjjjjjjj
+OFICIO CONTESTACION DICTAMEN MEDICINA LEGAL
+=========================================================================================
+
+
+DatosIdentificacion
+=========================================================================================
+NOMBRE DE CADAVER YA IDENTIFICADO
+FOTO EN VIDA
+FECHA DE NACIMIENTO  (SOLO EN CNI YA IDENTIFICADOS)  DIA MES AÑO
+MUNICIPIO DONDE NACIO  (NACIDO EN )
+ESTADO DONDE NACIO  (NACIDO EN )
+PAIS DONDE NACIO  (NACIONALIDAD)
+RECONICIDO POR LA PERSONA DE NOMBRE:
+PARENTESCO  DE QUIEN RECONOCE CON EL CNI
+FECHA DE SALIDA DEL CNI DEL SEMEFO
+CNI ENTREGADO A ESTA PERSONA (FAMILIAR DEL CNI) (AUTORIDAD QUE RESGUARDA CNI)
+PARENTESCO DE QUIEN RECIBE EL CUERPO CON EL CNI
+NUMERO DE OFICIO
+=========================================================================================
+
+DESTINO ACTUAL TRANSITORIO  --A GROSO MODO--
+DESTINO FINAL / UBICACIÓN   --ESPECIFICO--
+NOMBRE DE LA PERSONA RESPONSABLE PARA DIGITALIZACION EN LA BASE DE DATOS NACIONAL PM
+FECHA DE DIGITALIZACION BASE DE DATOS NACIONAL AM/PM
+SITIO
+PUNTO RECUP
+CPM
+NOTAS BASE PM NACIONAL
+
+
+NUMERO DE OFICIO DE SOLICITUD  DICTAMEN PERICIAL DE CAMPO
+NUM  OFICIO DICTAMEN ARQUEOLOGICO
+
+documentos
+=========================================================================================
+OFICIO AUTORIZACION ENTREGA DE CADAVER  FECHA DE OFICIO
+OFICIO DE AUTORIZACION DE ENTREGA DE CADAVER  AMP QUE AUTORIZA ENTREGA
+OFICIO AUTORIZACION ENTREGA DE CADAVER  DISTRITO JUDICIAL
+OFICIO AUTORIZACION ENTREGA DE CADAVER  NOMBRE DEL LICENCIADO
+OFICIO DE SOLICITUD DE NECROPSIA O RECONOCIMIENTO MEDICO
+=========================================================================================
+
+
+Genetica
+=========================================================================================
+GENETICA  PERITO QUIEN TOMA DE MUESTRA DE REFERENCIA ADN
+GENETICA  NUM OFICIO DE SOLICITUD TOMA  DE MUESTRA DE REFERENCIA ADN
+GENETICA  FECHA DE TOMA DE LA MUESTRA
+GENETICA  ELEMENTO BIOLOGICO COMO MUESTRA DE REFERENCIA
+GENETICA  CLAVE INTERNA  DEL LABORATORIO
+GENETICA  FOLIO INTERNO DEL INGRESO DE LA MUESTRA DE CPM EN BASE DE DATOS LABORATORIO
+GENETICA  YA SE PROCESO  LA MUESTRA SI / NO
+GENETICA  SE OBTUVO PERFIL GENETICO  (AND) SI / NO
+GENETICA  AMP/UEI QUIEN SOLICITA  EL COTEJO ADN
+GENETICA  NUM DE OFICIO DE SOLICITUD DE TOMA DE MUESTRA Y DE COTEJO
+GENETICA  PERITO QUIEN TOMA MUESTRA A FAMILIAR PARA COTEJO ADN
+GENETICA  FECHA DE TOMA DE MUESTRA BIOLOGICA A FAMILIAR
+GENETICA  NOMBRE DEL FAMILIAR A QUIEN SE LE TOMA LA MUESTRA
+GENETICA  MUESTRA BIOLOGICA TOMADA DE REFRENCIA
+GENETICA  FOLIO DE INGRESO DE MUESTRA A LA BASE DE DATOS DEL LABORATORIO
+GENETICA  PARENTESCO DEL FAMILIAR CON EL DESAPARECIDO
+GENETICA  PERITO QUIEN EMITE INFORME DE CONFRONTA ADN
+GENETICA  VINCULO BIOLOGICO CON RESULTADO POSITIVO  MEDIANTE ADN
+GENETICA  PORCENTAJE DECORRESPONDENCIA POSITIVA ADN
+GENETICA  FECHA DE EMISION DE TARJETA INFORMATIVA DEL RESULTADO POSITIVO DE VINCULO BIOLOGICO
+=========================================================================================
+
+
+MediaFiliacion
+=========================================================================================
+COMPLEXION 
+ESTATURA (TALLA)
+TALLA DE PIE
+APARIENCIA RACIAL
+COLOR DE TEZ
+FORMA DE ROSTRO
+TIPO DE PERFIL DEL ROSTRO
+FRENTE TAMAÑO EN RELACION A ALTURA
+FRENTE TAMAÑO EN RELACION A ANCHURA
+FRENTE FORMA DE CONTORNO SUPERIOR EN  RELACION DE INSERCIOS DE CABELLO
+FRENTE CARACTERISTICAS EXTRAORDINARIAS EN FRENTE
+OJOS TAMAÑO
+OJOS FORMA
+OJOS INSERCION EN PROFUNDIDAD
+OJOS COLOR
+CEJAS FORMA
+CEJAS CANTIDAD Y GROSOR
+NARIZ TAMAÑO
+NARIZ PERFIL / DORSO
+NARIZ NARINAS / ALETAS
+NARIZ PUNTA / FORMA 
+NARIZ PUNTA / TERMINACION
+OREJAS TAMAÑO
+OREJAS FORMA
+OREJAS SEPARACION OREJA - CABEZA
+OREJAS LOBULO / TAMAÑO
+OREJAS LOBULO / INSERCION
+BOCA TAMAÑO
+BOCA LABIOS
+MENTON FORMA
+CABELLO CANTIDAD
+CABELLO CALVICIE
+CABELLO CALVICIE ZONAS LATEROFRONTALES (ENTRADAS)
+CABELLO CALVICIE ZONA MEDIAFRONTAL
+CABELLO CALVICIE ZONA CORONAL
+CABELLO CALVICIE ZONA VERTEX
+CABELLO COLOR
+CABELLO  (TEXTURA O FORMA DEL PELO)
+CABELLO  (LONGITUD)
+CABELLO PARTICULARIDAD
+BARBA PRESENCIA / FORMA 
+BIGOTE PRESENCIA / FORMA
+PARTICULARIDAD EN CUANTO A VELLO CORPORAL
+SEÑAS PARTICULARES  DENTALES  
+SEÑAS PARTICULARES RELEVANTES IDENTIFICATIVAS (SOLO ANOTAR CARACTERISTICAS INDIVIDUALIZANTES ) ( NO GENERALIDADES )
+SEÑAS PARTICULARES VARIAS   (EN PIEL, ORGANOS, HUESOS)
+TATUAJES 
+PERTENENCIAS VARIAS  (PERTENENCIAS PERSONALES)
+VESTIMENTA
+CALZADO  DESCRIPCION Y TALLA (NUMERO)
+=========================================================================================
+
+Lofoscopia
+=========================================================================================
+LOFOSCOPIA  NUM DE OFICIO DE SOLICITUD DE TOMA DE FICHA NECRODACTILAR
+LOFOSCOPIA  FECHA DE OFICIO DE SOLICITUD DE TOMA DE FICHA NECRODACTILAR
+LOFOSCOPIA  PERITO QUIEN TOMA LA FICHA NECRODACTILAR
+LOFOSCOPIA  PERITO A QUIEN SE LE ASIGNA EL CASO
+LOFOSCOPIA  NUM FOLIO DE TARJETA INFORMATIVA DE RESULTADO
+LOFOSCOPIA  FECHA DE RECEPCION DE TARJETA INFORMATIVA DE RESULTADO AFIS
+LOFOSCOPIA  NOMBRE RESULTADO REGISTRO EN EL SISTEMA AFIS
+LOFOSCOPIA  DOMICILIO REFERIDO EN EL RESISTRO  DE LA PERSONA
+=========================================================================================
+
+Odontologia
+=========================================================================================
+ODONTOLOGIA  PERITO
+ODONTOLOGIA  FECHA DE ANALISIS  EMISION INFORME ODONTOLOGICO
+EDAD ESTIMACION POR ODONTOLOGIA
+=========================================================================================
+
+Antropologia
+=========================================================================================
+ANTROPOLOGIA  PERITO
+ANTROPOLOGIA  NUMERO DE OFICIO DE SOLICITUD DE ANALISIS ANTROPOLOGICO
+ANTROPOLOGIA  FECHA DE ANALISIS  ANTROPOLOGICO
+ANTROPOLOGIA  FECHA DE EMISION DE TARJETA INFORMATIVA ANTROPOLOGIA
+ANTROPOLOGIA  NUM OFICIO DICTAMEN ANTROPOLOGICO
+=========================================================================================
+
+Arqueologia
+=========================================================================================
+ARQUEOLOGIA  PERITO
+ARQUEOLOGIA  OFICIO DE SOLICITUD  DICTAMEN ARQUEOLOGA
+ARQUEOLOGIA  NUMERO DE REFERNCIA
+ARQUEOLOGIA  FECHA DE EMISION DE DE TARJETA INFORMATIVA
+SEXO ESTIMADO POR ANTROPOLOGIA
+EDAD ESTIMACION POR ANTROPOLOGIA
+=========================================================================================
+
+[ "Fresco / Preservado",
+"Putrefacto",
+"Momificado",
+"Calcinado",
+"Esqueletizado",
+"Acartonado / Apergaminado",
+"Mixto (Fresco y esqueletizado)",
+"Mixto (Fresco y putrefacto)",
+"Mixto (Fresco y calcinado)",
+"Mixto (Putrefacto y fresco)",
+"Mixto (Putrefacto y esqueletizado)",
+"Mixto (Putrefacto y calcinado)",
+"Mixto (Calcinado y fresco)",
+"Mixto (Calcinado y putrefacto)",
+"Mixto (Calcinado y esqueletizado)",
+"Mixto (Calcinado en reduccion esqueletica)",
+"Mixto (Esqueletizado yfresco)",
+"Mixto (Esqueletizado y acartonado)",
+"Mixto (Esqueletizado y putrefacto)",
+"Mixto (Esqueletizado y calcinado)" ]
+
+
+Perito quien toma de muestra de referencia adn
+Num oficio de solicitud toma  de muestra de referencia adn
+Fecha de toma de la muestra
+Elemento biologico como muestra de referencia
+Clave interna  del laboratorio
+Folio interno del ingreso de la muestra de cpm en base de datos laboratorio
+Ya se proceso  la muestra si / no
+Se obtuvo perfil genetico  (and) si / no
+Amp/uei quien solicita  el cotejo adn
+Num de oficio de solicitud de toma de muestra y de cotejo
+Perito quien toma muestra a familiar para cotejo adn
+Fecha de toma de muestra biologica a familiar
+Nombre del familiar a quien se le toma la muestra
+Muestra biologica tomada de refrencia
+Folio de ingreso de muestra a la base de datos del laboratorio
+Parentesco del familiar con el desaparecido
+Perito quien emite informe de confronta adn
+Vinculo biologico con resultado positivo  mediante adn
+Porcentaje decorrespondencia positiva adn
+Fecha de emision de tarjeta informativa del resultado positivo de vinculo biologico
+

@@ -1,0 +1,99 @@
+{% extends 'frontend/base.html' %}
+{% block content %}
+<div id="csrf-token" data-csrf-token="{{ csrf_token }}"></div>
+<h1>Modulo de medicina legal</h1>
+<div class="p-2 m-2 w-100 d-flex justify-content-center">
+	<div class="container-fluid">
+		<form method="post" id="captureForm" novalidate>
+			{% csrf_token %}
+			<ul class="nav nav-tabs" id="tabList" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="datosGenerales-tab" data-toggle="tab" href="#datosGenerales" role="tab" aria-controls="datosGenerales" aria-selected="true">Datos generales</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="datosNecropsia-tab" data-toggle="tab" href="#datosNecropsia" role="tab" aria-controls="datosNecropsia" aria-selected="false">Datos necropsia</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="tabContentContainer">
+				<div class="tab-pane fade show active" id="datosGenerales" role="tabpanel" aria-labelledby="datosGenerales-tab">
+					<h2>Datos Generales</h2>
+					{% for field in form.formDatosMedicinaLegal %}
+					<div class="form-group m-2">
+						{{ field.label_tag }}
+						{{ field }}
+						{{ field.errors }}
+					</div>
+					{% endfor %}
+				</div>
+				<div class="tab-pane fade" id="datosNecropsia" role="tabpanel" aria-labelledby="datosNecropsia-tab">
+					<h2>Datos necropsia</h2>
+					{% for field in form.formDatosNecropsia %}
+					<div class="form-group m-2">
+						{{ field.label_tag }}
+						{{ field }}
+						{{ field.errors }}
+					</div>
+					{% endfor %}
+				</div>
+				<button type="submit" class="btn btn-primary">Guardar</button>
+		</form>
+	</div>
+</div>
+<div class="container-fluid d-flex justify-content-center align-items-start h-100 w-100 overflow-auto m-3" id="table-container">
+</div>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		console.log("DOM Loaded and parsed!")
+		document.getElementById('captureForm').addEventListener('submit', function (e) {
+			console.log("Submitting form...")
+			e.preventDefault();
+			let form = this;
+			let formData = new FormData(form);
+			fetch(form.action, {
+				method: form.method,
+				body: formData,
+				headers: {
+					'X-Requested-With': 'XMLHttpRequest'
+				}
+			}).then(response => response.json()).then(data => {
+				if (data.success) {
+					window.location.href = data.redirect_url;
+				} else {
+					// Handle validation errors
+					if (data.errors) {
+						for (let field in data.errors) {
+							let errorField = document.querySelector(`[name=${field}]`);
+							if (errorField) {
+								errorField.classList.add('is-invalid');
+								let errorDiv = document.createElement('div');
+								errorDiv.classList.add('invalid-feedback');
+								errorDiv.innerText = data.errors[field].join(', ');
+								errorField.parentNode.appendChild(errorDiv);
+
+								// Switch to the tab containing the error
+								console.log(`Error caused by: ${errorField}`)
+								let tabPane = errorField.closest('.tab-pane');
+								if (tabPane) {
+									let tabId = tabPane.id;
+									let tabLink = document.querySelector(`[href="#${tabId}"]`);
+									if (tabLink) {
+										tabLink.click();
+									}
+								}
+							}
+						}
+					}
+				}
+			}).catch(error => {
+				console.log('Error:');
+				console.log(error)
+			});
+		});
+
+		$('#tabList a').on('click', function (e) {
+			e.preventDefault();
+			$(this).tab('show');
+		});
+	});
+</script>
+{% endblock %}

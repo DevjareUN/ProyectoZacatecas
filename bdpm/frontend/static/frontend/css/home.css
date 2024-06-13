@@ -1,0 +1,30 @@
+/* Custom CSS for footer */
+html {
+	position: relative;
+	min-height: 100%;
+}
+.nav-item .active {
+	font-weight: bold;
+	border-bottom: 2px solid #000;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.content {
+	flex: 1;
+}
+.footer {
+	position: relative;
+	height: 80px;
+}
+.footer-content {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #f8f9fa;
+	text-align: center;
+	padding: 20px;
+	border-top: 1px solid #e7e7e7;
+}

@@ -1,0 +1,4665 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-06-11T19:43:21.778Z",
+        "user": 1,
+        "content_type": 88,
+        "object_id": "1",
+        "object_repr": "DGSP",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-06-11T19:43:48.384Z",
+        "user": 1,
+        "content_type": 88,
+        "object_id": "2",
+        "object_repr": "FGJEZ",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-06-11T19:45:01.810Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "1",
+        "object_repr": "Departamento de ACNID (DGSP)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-06-11T19:45:13.247Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "2",
+        "object_repr": "Departamento de Lofoscopia (DGSP)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-06-11T19:45:51.354Z",
+        "user": 1,
+        "content_type": 89,
+        "object_id": "1",
+        "object_repr": "REEA980907",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-06-11T19:46:24.215Z",
+        "user": 1,
+        "content_type": 89,
+        "object_id": "2",
+        "object_repr": "UNODOSTRES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-06-11T20:26:34.198Z",
+        "user": 1,
+        "content_type": 90,
+        "object_id": "1",
+        "object_repr": "Fresnillo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-06-11T20:26:49.059Z",
+        "user": 1,
+        "content_type": 90,
+        "object_id": "2",
+        "object_repr": "Zacatecas",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-06-11T20:26:57.546Z",
+        "user": 1,
+        "content_type": 88,
+        "object_id": "1",
+        "object_repr": "DGSP (self.region)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-06-11T20:27:32.393Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "1",
+        "object_repr": "Departamento de ACNID (DGSP (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-06-11T20:27:40.005Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "2",
+        "object_repr": "Departamento de Lofoscopia (DGSP (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-06-11T20:28:19.469Z",
+        "user": 1,
+        "content_type": 88,
+        "object_id": "2",
+        "object_repr": "FGJEZ (self.region)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-06-11T20:29:02.009Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "3",
+        "object_repr": "Departamento de Odontologia (FGJEZ) (FGJEZ (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-06-11T20:29:15.690Z",
+        "user": 1,
+        "content_type": 89,
+        "object_id": "1",
+        "object_repr": "UNODOSTRES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-06-11T21:44:15.479Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-06-11T21:44:56.318Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "newuser",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-06-11T21:46:21.436Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "newuser",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-06-11T21:46:55.437Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "newuser",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-06-11T22:15:55.915Z",
+        "user": 1,
+        "content_type": 83,
+        "object_id": "1",
+        "object_repr": "Tibia",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-06-11T22:16:02.756Z",
+        "user": 1,
+        "content_type": 83,
+        "object_id": "2",
+        "object_repr": "Pelvis",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-06-11T22:16:10.388Z",
+        "user": 1,
+        "content_type": 83,
+        "object_id": "3",
+        "object_repr": "Costilla",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-06-11T22:34:24.829Z",
+        "user": 1,
+        "content_type": 90,
+        "object_id": "1",
+        "object_repr": "Zacatecas",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-06-11T22:34:25.783Z",
+        "user": 1,
+        "content_type": 88,
+        "object_id": "1",
+        "object_repr": "DGSP (self.region)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-06-11T22:34:27.528Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "1",
+        "object_repr": "Departamento de Genetica (DGSP (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-06-11T22:34:30.259Z",
+        "user": 1,
+        "content_type": 83,
+        "object_id": "1",
+        "object_repr": "Pelvis",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-06-11T22:35:14.103Z",
+        "user": 1,
+        "content_type": 83,
+        "object_id": "2",
+        "object_repr": "Costilla",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-06-11T22:35:49.707Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "2",
+        "object_repr": "Departamento de Lofoscopia (DGSP (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-06-11T22:36:05.680Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "3",
+        "object_repr": "Departamento de ACNID (DGSP (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-06-11T22:36:31.451Z",
+        "user": 1,
+        "content_type": 90,
+        "object_id": "2",
+        "object_repr": "Fresnillo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-06-11T22:36:32.695Z",
+        "user": 1,
+        "content_type": 88,
+        "object_id": "2",
+        "object_repr": "FGJEZ (self.region)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-06-11T22:36:44.025Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "4",
+        "object_repr": "Departamento de Genetica (FGJEZ (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-06-11T22:36:56.051Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "5",
+        "object_repr": "Departamento de Lofosciopia (FGJEZ (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-06-11T22:37:29.227Z",
+        "user": 1,
+        "content_type": 89,
+        "object_id": "1",
+        "object_repr": "REEA980907",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-06-11T22:37:43.899Z",
+        "user": 1,
+        "content_type": 89,
+        "object_id": "2",
+        "object_repr": "BCRCAMPOS",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-06-11T22:38:28.512Z",
+        "user": 1,
+        "content_type": 87,
+        "object_id": "6",
+        "object_repr": "Departamento de Medicina Legal (DGSP (self.region))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-06-11T22:38:30.584Z",
+        "user": 1,
+        "content_type": 89,
+        "object_id": "3",
+        "object_repr": "NUMEROUNODOSTRES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add caso cni",
+        "content_type": 7,
+        "codename": "add_casocni"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change caso cni",
+        "content_type": 7,
+        "codename": "change_casocni"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete caso cni",
+        "content_type": 7,
+        "codename": "delete_casocni"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view caso cni",
+        "content_type": 7,
+        "codename": "view_casocni"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add ojos",
+        "content_type": 8,
+        "codename": "add_ojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change ojos",
+        "content_type": 8,
+        "codename": "change_ojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete ojos",
+        "content_type": 8,
+        "codename": "delete_ojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view ojos",
+        "content_type": 8,
+        "codename": "view_ojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add caracteristicas individualizantes",
+        "content_type": 9,
+        "codename": "add_caracteristicasindividualizantes"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change caracteristicas individualizantes",
+        "content_type": 9,
+        "codename": "change_caracteristicasindividualizantes"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete caracteristicas individualizantes",
+        "content_type": 9,
+        "codename": "delete_caracteristicasindividualizantes"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view caracteristicas individualizantes",
+        "content_type": 9,
+        "codename": "view_caracteristicasindividualizantes"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add agente mp",
+        "content_type": 10,
+        "codename": "add_agentemp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change agente mp",
+        "content_type": 10,
+        "codename": "change_agentemp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete agente mp",
+        "content_type": 10,
+        "codename": "delete_agentemp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view agente mp",
+        "content_type": 10,
+        "codename": "view_agentemp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add aletas nariz",
+        "content_type": 11,
+        "codename": "add_aletasnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change aletas nariz",
+        "content_type": 11,
+        "codename": "change_aletasnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete aletas nariz",
+        "content_type": 11,
+        "codename": "delete_aletasnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view aletas nariz",
+        "content_type": 11,
+        "codename": "view_aletasnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add altura frente",
+        "content_type": 12,
+        "codename": "add_alturafrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change altura frente",
+        "content_type": 12,
+        "codename": "change_alturafrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete altura frente",
+        "content_type": 12,
+        "codename": "delete_alturafrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view altura frente",
+        "content_type": 12,
+        "codename": "view_alturafrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add ambiente sitio",
+        "content_type": 13,
+        "codename": "add_ambientesitio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change ambiente sitio",
+        "content_type": 13,
+        "codename": "change_ambientesitio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete ambiente sitio",
+        "content_type": 13,
+        "codename": "delete_ambientesitio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view ambiente sitio",
+        "content_type": 13,
+        "codename": "view_ambientesitio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add am p_ue i_inv",
+        "content_type": 14,
+        "codename": "add_amp_uei_inv"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change am p_ue i_inv",
+        "content_type": 14,
+        "codename": "change_amp_uei_inv"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete am p_ue i_inv",
+        "content_type": 14,
+        "codename": "delete_amp_uei_inv"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view am p_ue i_inv",
+        "content_type": 14,
+        "codename": "view_amp_uei_inv"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add anchura frente",
+        "content_type": 15,
+        "codename": "add_anchurafrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change anchura frente",
+        "content_type": 15,
+        "codename": "change_anchurafrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete anchura frente",
+        "content_type": 15,
+        "codename": "delete_anchurafrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view anchura frente",
+        "content_type": 15,
+        "codename": "view_anchurafrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add apariencia racial",
+        "content_type": 16,
+        "codename": "add_aparienciaracial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change apariencia racial",
+        "content_type": 16,
+        "codename": "change_aparienciaracial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete apariencia racial",
+        "content_type": 16,
+        "codename": "delete_aparienciaracial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view apariencia racial",
+        "content_type": 16,
+        "codename": "view_aparienciaracial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add area reconocimiento positivo",
+        "content_type": 17,
+        "codename": "add_areareconocimientopositivo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change area reconocimiento positivo",
+        "content_type": 17,
+        "codename": "change_areareconocimientopositivo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete area reconocimiento positivo",
+        "content_type": 17,
+        "codename": "delete_areareconocimientopositivo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view area reconocimiento positivo",
+        "content_type": 17,
+        "codename": "view_areareconocimientopositivo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add barba",
+        "content_type": 18,
+        "codename": "add_barba"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change barba",
+        "content_type": 18,
+        "codename": "change_barba"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete barba",
+        "content_type": 18,
+        "codename": "delete_barba"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view barba",
+        "content_type": 18,
+        "codename": "view_barba"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add bigote",
+        "content_type": 19,
+        "codename": "add_bigote"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change bigote",
+        "content_type": 19,
+        "codename": "change_bigote"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete bigote",
+        "content_type": 19,
+        "codename": "delete_bigote"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view bigote",
+        "content_type": 19,
+        "codename": "view_bigote"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Can add cabello calvicie",
+        "content_type": 20,
+        "codename": "add_cabellocalvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Can change cabello calvicie",
+        "content_type": 20,
+        "codename": "change_cabellocalvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Can delete cabello calvicie",
+        "content_type": 20,
+        "codename": "delete_cabellocalvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+        "name": "Can view cabello calvicie",
+        "content_type": 20,
+        "codename": "view_cabellocalvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+        "name": "Can add calvicie",
+        "content_type": 21,
+        "codename": "add_calvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+        "name": "Can change calvicie",
+        "content_type": 21,
+        "codename": "change_calvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+        "name": "Can delete calvicie",
+        "content_type": 21,
+        "codename": "delete_calvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+        "name": "Can view calvicie",
+        "content_type": 21,
+        "codename": "view_calvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+        "name": "Can add cantidad cabello",
+        "content_type": 22,
+        "codename": "add_cantidadcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+        "name": "Can change cantidad cabello",
+        "content_type": 22,
+        "codename": "change_cantidadcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+        "name": "Can delete cantidad cabello",
+        "content_type": 22,
+        "codename": "delete_cantidadcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+        "name": "Can view cantidad cabello",
+        "content_type": 22,
+        "codename": "view_cantidadcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+        "name": "Can add caracteristicas extraordinarias frente",
+        "content_type": 23,
+        "codename": "add_caracteristicasextraordinariasfrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+        "name": "Can change caracteristicas extraordinarias frente",
+        "content_type": 23,
+        "codename": "change_caracteristicasextraordinariasfrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+        "name": "Can delete caracteristicas extraordinarias frente",
+        "content_type": 23,
+        "codename": "delete_caracteristicasextraordinariasfrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+        "name": "Can view caracteristicas extraordinarias frente",
+        "content_type": 23,
+        "codename": "view_caracteristicasextraordinariasfrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 93,
+    "fields": {
+        "name": "Can add carpeta investigacion",
+        "content_type": 24,
+        "codename": "add_carpetainvestigacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 94,
+    "fields": {
+        "name": "Can change carpeta investigacion",
+        "content_type": 24,
+        "codename": "change_carpetainvestigacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 95,
+    "fields": {
+        "name": "Can delete carpeta investigacion",
+        "content_type": 24,
+        "codename": "delete_carpetainvestigacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 96,
+    "fields": {
+        "name": "Can view carpeta investigacion",
+        "content_type": 24,
+        "codename": "view_carpetainvestigacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 97,
+    "fields": {
+        "name": "Can add caso ci",
+        "content_type": 25,
+        "codename": "add_casoci"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 98,
+    "fields": {
+        "name": "Can change caso ci",
+        "content_type": 25,
+        "codename": "change_casoci"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 99,
+    "fields": {
+        "name": "Can delete caso ci",
+        "content_type": 25,
+        "codename": "delete_casoci"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 100,
+    "fields": {
+        "name": "Can view caso ci",
+        "content_type": 25,
+        "codename": "view_casoci"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 101,
+    "fields": {
+        "name": "Can add circunstancias cpm hallazgo",
+        "content_type": 26,
+        "codename": "add_circunstanciascpmhallazgo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 102,
+    "fields": {
+        "name": "Can change circunstancias cpm hallazgo",
+        "content_type": 26,
+        "codename": "change_circunstanciascpmhallazgo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 103,
+    "fields": {
+        "name": "Can delete circunstancias cpm hallazgo",
+        "content_type": 26,
+        "codename": "delete_circunstanciascpmhallazgo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 104,
+    "fields": {
+        "name": "Can view circunstancias cpm hallazgo",
+        "content_type": 26,
+        "codename": "view_circunstanciascpmhallazgo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 105,
+    "fields": {
+        "name": "Can add circunstancias extraordinarias",
+        "content_type": 27,
+        "codename": "add_circunstanciasextraordinarias"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 106,
+    "fields": {
+        "name": "Can change circunstancias extraordinarias",
+        "content_type": 27,
+        "codename": "change_circunstanciasextraordinarias"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 107,
+    "fields": {
+        "name": "Can delete circunstancias extraordinarias",
+        "content_type": 27,
+        "codename": "delete_circunstanciasextraordinarias"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 108,
+    "fields": {
+        "name": "Can view circunstancias extraordinarias",
+        "content_type": 27,
+        "codename": "view_circunstanciasextraordinarias"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 109,
+    "fields": {
+        "name": "Can add clasificacion evento",
+        "content_type": 28,
+        "codename": "add_clasificacionevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 110,
+    "fields": {
+        "name": "Can change clasificacion evento",
+        "content_type": 28,
+        "codename": "change_clasificacionevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 111,
+    "fields": {
+        "name": "Can delete clasificacion evento",
+        "content_type": 28,
+        "codename": "delete_clasificacionevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 112,
+    "fields": {
+        "name": "Can view clasificacion evento",
+        "content_type": 28,
+        "codename": "view_clasificacionevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 113,
+    "fields": {
+        "name": "Can add clima sitio",
+        "content_type": 29,
+        "codename": "add_climasitio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 114,
+    "fields": {
+        "name": "Can change clima sitio",
+        "content_type": 29,
+        "codename": "change_climasitio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 115,
+    "fields": {
+        "name": "Can delete clima sitio",
+        "content_type": 29,
+        "codename": "delete_climasitio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 116,
+    "fields": {
+        "name": "Can view clima sitio",
+        "content_type": 29,
+        "codename": "view_climasitio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 117,
+    "fields": {
+        "name": "Can add colocacion cpm",
+        "content_type": 30,
+        "codename": "add_colocacioncpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 118,
+    "fields": {
+        "name": "Can change colocacion cpm",
+        "content_type": 30,
+        "codename": "change_colocacioncpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 119,
+    "fields": {
+        "name": "Can delete colocacion cpm",
+        "content_type": 30,
+        "codename": "delete_colocacioncpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 120,
+    "fields": {
+        "name": "Can view colocacion cpm",
+        "content_type": 30,
+        "codename": "view_colocacioncpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 121,
+    "fields": {
+        "name": "Can add color cabello",
+        "content_type": 31,
+        "codename": "add_colorcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 122,
+    "fields": {
+        "name": "Can change color cabello",
+        "content_type": 31,
+        "codename": "change_colorcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 123,
+    "fields": {
+        "name": "Can delete color cabello",
+        "content_type": 31,
+        "codename": "delete_colorcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 124,
+    "fields": {
+        "name": "Can view color cabello",
+        "content_type": 31,
+        "codename": "view_colorcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 125,
+    "fields": {
+        "name": "Can add color ojos",
+        "content_type": 32,
+        "codename": "add_colorojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 126,
+    "fields": {
+        "name": "Can change color ojos",
+        "content_type": 32,
+        "codename": "change_colorojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 127,
+    "fields": {
+        "name": "Can delete color ojos",
+        "content_type": 32,
+        "codename": "delete_colorojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 128,
+    "fields": {
+        "name": "Can view color ojos",
+        "content_type": 32,
+        "codename": "view_colorojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 129,
+    "fields": {
+        "name": "Can add color tez",
+        "content_type": 33,
+        "codename": "add_colortez"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 130,
+    "fields": {
+        "name": "Can change color tez",
+        "content_type": 33,
+        "codename": "change_colortez"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 131,
+    "fields": {
+        "name": "Can delete color tez",
+        "content_type": 33,
+        "codename": "delete_colortez"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 132,
+    "fields": {
+        "name": "Can view color tez",
+        "content_type": 33,
+        "codename": "view_colortez"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 133,
+    "fields": {
+        "name": "Can add complexion",
+        "content_type": 34,
+        "codename": "add_complexion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 134,
+    "fields": {
+        "name": "Can change complexion",
+        "content_type": 34,
+        "codename": "change_complexion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 135,
+    "fields": {
+        "name": "Can delete complexion",
+        "content_type": 34,
+        "codename": "delete_complexion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 136,
+    "fields": {
+        "name": "Can view complexion",
+        "content_type": 34,
+        "codename": "view_complexion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 137,
+    "fields": {
+        "name": "Can add criminalista campo",
+        "content_type": 35,
+        "codename": "add_criminalistacampo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 138,
+    "fields": {
+        "name": "Can change criminalista campo",
+        "content_type": 35,
+        "codename": "change_criminalistacampo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 139,
+    "fields": {
+        "name": "Can delete criminalista campo",
+        "content_type": 35,
+        "codename": "delete_criminalistacampo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 140,
+    "fields": {
+        "name": "Can view criminalista campo",
+        "content_type": 35,
+        "codename": "view_criminalistacampo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 141,
+    "fields": {
+        "name": "Can add departamentos",
+        "content_type": 36,
+        "codename": "add_departamentos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 142,
+    "fields": {
+        "name": "Can change departamentos",
+        "content_type": 36,
+        "codename": "change_departamentos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 143,
+    "fields": {
+        "name": "Can delete departamentos",
+        "content_type": 36,
+        "codename": "delete_departamentos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 144,
+    "fields": {
+        "name": "Can view departamentos",
+        "content_type": 36,
+        "codename": "view_departamentos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 145,
+    "fields": {
+        "name": "Can add distrito judicial",
+        "content_type": 37,
+        "codename": "add_distritojudicial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 146,
+    "fields": {
+        "name": "Can change distrito judicial",
+        "content_type": 37,
+        "codename": "change_distritojudicial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 147,
+    "fields": {
+        "name": "Can delete distrito judicial",
+        "content_type": 37,
+        "codename": "delete_distritojudicial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 148,
+    "fields": {
+        "name": "Can view distrito judicial",
+        "content_type": 37,
+        "codename": "view_distritojudicial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 149,
+    "fields": {
+        "name": "Can add elemento biologico",
+        "content_type": 38,
+        "codename": "add_elementobiologico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 150,
+    "fields": {
+        "name": "Can change elemento biologico",
+        "content_type": 38,
+        "codename": "change_elementobiologico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 151,
+    "fields": {
+        "name": "Can delete elemento biologico",
+        "content_type": 38,
+        "codename": "delete_elementobiologico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 152,
+    "fields": {
+        "name": "Can view elemento biologico",
+        "content_type": 38,
+        "codename": "view_elementobiologico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 153,
+    "fields": {
+        "name": "Can add elementos biologicos referenciales",
+        "content_type": 39,
+        "codename": "add_elementosbiologicosreferenciales"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 154,
+    "fields": {
+        "name": "Can change elementos biologicos referenciales",
+        "content_type": 39,
+        "codename": "change_elementosbiologicosreferenciales"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 155,
+    "fields": {
+        "name": "Can delete elementos biologicos referenciales",
+        "content_type": 39,
+        "codename": "delete_elementosbiologicosreferenciales"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 156,
+    "fields": {
+        "name": "Can view elementos biologicos referenciales",
+        "content_type": 39,
+        "codename": "view_elementosbiologicosreferenciales"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 157,
+    "fields": {
+        "name": "Can add espacio especifico",
+        "content_type": 40,
+        "codename": "add_espacioespecifico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 158,
+    "fields": {
+        "name": "Can change espacio especifico",
+        "content_type": 40,
+        "codename": "change_espacioespecifico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 159,
+    "fields": {
+        "name": "Can delete espacio especifico",
+        "content_type": 40,
+        "codename": "delete_espacioespecifico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 160,
+    "fields": {
+        "name": "Can view espacio especifico",
+        "content_type": 40,
+        "codename": "view_espacioespecifico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 161,
+    "fields": {
+        "name": "Can add estado actual",
+        "content_type": 41,
+        "codename": "add_estadoactual"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 162,
+    "fields": {
+        "name": "Can change estado actual",
+        "content_type": 41,
+        "codename": "change_estadoactual"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 163,
+    "fields": {
+        "name": "Can delete estado actual",
+        "content_type": 41,
+        "codename": "delete_estadoactual"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 164,
+    "fields": {
+        "name": "Can view estado actual",
+        "content_type": 41,
+        "codename": "view_estadoactual"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 165,
+    "fields": {
+        "name": "Can add estado preservacion",
+        "content_type": 42,
+        "codename": "add_estadopreservacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 166,
+    "fields": {
+        "name": "Can change estado preservacion",
+        "content_type": 42,
+        "codename": "change_estadopreservacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 167,
+    "fields": {
+        "name": "Can delete estado preservacion",
+        "content_type": 42,
+        "codename": "delete_estadopreservacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 168,
+    "fields": {
+        "name": "Can view estado preservacion",
+        "content_type": 42,
+        "codename": "view_estadopreservacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 169,
+    "fields": {
+        "name": "Can add estado republica",
+        "content_type": 43,
+        "codename": "add_estadorepublica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 170,
+    "fields": {
+        "name": "Can change estado republica",
+        "content_type": 43,
+        "codename": "change_estadorepublica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 171,
+    "fields": {
+        "name": "Can delete estado republica",
+        "content_type": 43,
+        "codename": "delete_estadorepublica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 172,
+    "fields": {
+        "name": "Can view estado republica",
+        "content_type": 43,
+        "codename": "view_estadorepublica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 173,
+    "fields": {
+        "name": "Can add flexion del cuerpo cpm",
+        "content_type": 44,
+        "codename": "add_flexiondelcuerpocpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 174,
+    "fields": {
+        "name": "Can change flexion del cuerpo cpm",
+        "content_type": 44,
+        "codename": "change_flexiondelcuerpocpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 175,
+    "fields": {
+        "name": "Can delete flexion del cuerpo cpm",
+        "content_type": 44,
+        "codename": "delete_flexiondelcuerpocpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 176,
+    "fields": {
+        "name": "Can view flexion del cuerpo cpm",
+        "content_type": 44,
+        "codename": "view_flexiondelcuerpocpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 177,
+    "fields": {
+        "name": "Can add forma cejas",
+        "content_type": 45,
+        "codename": "add_formacejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 178,
+    "fields": {
+        "name": "Can change forma cejas",
+        "content_type": 45,
+        "codename": "change_formacejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 179,
+    "fields": {
+        "name": "Can delete forma cejas",
+        "content_type": 45,
+        "codename": "delete_formacejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 180,
+    "fields": {
+        "name": "Can view forma cejas",
+        "content_type": 45,
+        "codename": "view_formacejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 181,
+    "fields": {
+        "name": "Can add forma contorno superior frente",
+        "content_type": 46,
+        "codename": "add_formacontornosuperiorfrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 182,
+    "fields": {
+        "name": "Can change forma contorno superior frente",
+        "content_type": 46,
+        "codename": "change_formacontornosuperiorfrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 183,
+    "fields": {
+        "name": "Can delete forma contorno superior frente",
+        "content_type": 46,
+        "codename": "delete_formacontornosuperiorfrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 184,
+    "fields": {
+        "name": "Can view forma contorno superior frente",
+        "content_type": 46,
+        "codename": "view_formacontornosuperiorfrente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 185,
+    "fields": {
+        "name": "Can add forma menton",
+        "content_type": 47,
+        "codename": "add_formamenton"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 186,
+    "fields": {
+        "name": "Can change forma menton",
+        "content_type": 47,
+        "codename": "change_formamenton"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 187,
+    "fields": {
+        "name": "Can delete forma menton",
+        "content_type": 47,
+        "codename": "delete_formamenton"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 188,
+    "fields": {
+        "name": "Can view forma menton",
+        "content_type": 47,
+        "codename": "view_formamenton"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 189,
+    "fields": {
+        "name": "Can add forma nariz",
+        "content_type": 48,
+        "codename": "add_formanariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 190,
+    "fields": {
+        "name": "Can change forma nariz",
+        "content_type": 48,
+        "codename": "change_formanariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 191,
+    "fields": {
+        "name": "Can delete forma nariz",
+        "content_type": 48,
+        "codename": "delete_formanariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 192,
+    "fields": {
+        "name": "Can view forma nariz",
+        "content_type": 48,
+        "codename": "view_formanariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 193,
+    "fields": {
+        "name": "Can add forma ojos",
+        "content_type": 49,
+        "codename": "add_formaojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 194,
+    "fields": {
+        "name": "Can change forma ojos",
+        "content_type": 49,
+        "codename": "change_formaojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 195,
+    "fields": {
+        "name": "Can delete forma ojos",
+        "content_type": 49,
+        "codename": "delete_formaojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 196,
+    "fields": {
+        "name": "Can view forma ojos",
+        "content_type": 49,
+        "codename": "view_formaojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 197,
+    "fields": {
+        "name": "Can add forma orejas",
+        "content_type": 50,
+        "codename": "add_formaorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 198,
+    "fields": {
+        "name": "Can change forma orejas",
+        "content_type": 50,
+        "codename": "change_formaorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 199,
+    "fields": {
+        "name": "Can delete forma orejas",
+        "content_type": 50,
+        "codename": "delete_formaorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 200,
+    "fields": {
+        "name": "Can view forma orejas",
+        "content_type": 50,
+        "codename": "view_formaorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 201,
+    "fields": {
+        "name": "Can add forma rostro",
+        "content_type": 51,
+        "codename": "add_formarostro"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 202,
+    "fields": {
+        "name": "Can change forma rostro",
+        "content_type": 51,
+        "codename": "change_formarostro"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 203,
+    "fields": {
+        "name": "Can delete forma rostro",
+        "content_type": 51,
+        "codename": "delete_formarostro"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 204,
+    "fields": {
+        "name": "Can view forma rostro",
+        "content_type": 51,
+        "codename": "view_formarostro"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 205,
+    "fields": {
+        "name": "Can add grosor cejas",
+        "content_type": 52,
+        "codename": "add_grosorcejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 206,
+    "fields": {
+        "name": "Can change grosor cejas",
+        "content_type": 52,
+        "codename": "change_grosorcejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 207,
+    "fields": {
+        "name": "Can delete grosor cejas",
+        "content_type": 52,
+        "codename": "delete_grosorcejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 208,
+    "fields": {
+        "name": "Can view grosor cejas",
+        "content_type": 52,
+        "codename": "view_grosorcejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 209,
+    "fields": {
+        "name": "Can add individuos inhumacion",
+        "content_type": 53,
+        "codename": "add_individuosinhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 210,
+    "fields": {
+        "name": "Can change individuos inhumacion",
+        "content_type": 53,
+        "codename": "change_individuosinhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 211,
+    "fields": {
+        "name": "Can delete individuos inhumacion",
+        "content_type": 53,
+        "codename": "delete_individuosinhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 212,
+    "fields": {
+        "name": "Can view individuos inhumacion",
+        "content_type": 53,
+        "codename": "view_individuosinhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 213,
+    "fields": {
+        "name": "Can add insercion lobulo orejas",
+        "content_type": 54,
+        "codename": "add_insercionlobuloorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 214,
+    "fields": {
+        "name": "Can change insercion lobulo orejas",
+        "content_type": 54,
+        "codename": "change_insercionlobuloorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 215,
+    "fields": {
+        "name": "Can delete insercion lobulo orejas",
+        "content_type": 54,
+        "codename": "delete_insercionlobuloorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 216,
+    "fields": {
+        "name": "Can view insercion lobulo orejas",
+        "content_type": 54,
+        "codename": "view_insercionlobuloorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 217,
+    "fields": {
+        "name": "Can add insercion profundidad ojos",
+        "content_type": 55,
+        "codename": "add_insercionprofundidadojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 218,
+    "fields": {
+        "name": "Can change insercion profundidad ojos",
+        "content_type": 55,
+        "codename": "change_insercionprofundidadojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 219,
+    "fields": {
+        "name": "Can delete insercion profundidad ojos",
+        "content_type": 55,
+        "codename": "delete_insercionprofundidadojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 220,
+    "fields": {
+        "name": "Can view insercion profundidad ojos",
+        "content_type": 55,
+        "codename": "view_insercionprofundidadojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 221,
+    "fields": {
+        "name": "Can add integridad cadaverica",
+        "content_type": 56,
+        "codename": "add_integridadcadaverica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 222,
+    "fields": {
+        "name": "Can change integridad cadaverica",
+        "content_type": 56,
+        "codename": "change_integridadcadaverica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 223,
+    "fields": {
+        "name": "Can delete integridad cadaverica",
+        "content_type": 56,
+        "codename": "delete_integridadcadaverica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 224,
+    "fields": {
+        "name": "Can view integridad cadaverica",
+        "content_type": 56,
+        "codename": "view_integridadcadaverica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 225,
+    "fields": {
+        "name": "Can add labios boca",
+        "content_type": 57,
+        "codename": "add_labiosboca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 226,
+    "fields": {
+        "name": "Can change labios boca",
+        "content_type": 57,
+        "codename": "change_labiosboca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 227,
+    "fields": {
+        "name": "Can delete labios boca",
+        "content_type": 57,
+        "codename": "delete_labiosboca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 228,
+    "fields": {
+        "name": "Can view labios boca",
+        "content_type": 57,
+        "codename": "view_labiosboca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 229,
+    "fields": {
+        "name": "Can add longitud cabello",
+        "content_type": 58,
+        "codename": "add_longitudcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 230,
+    "fields": {
+        "name": "Can change longitud cabello",
+        "content_type": 58,
+        "codename": "change_longitudcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 231,
+    "fields": {
+        "name": "Can delete longitud cabello",
+        "content_type": 58,
+        "codename": "delete_longitudcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 232,
+    "fields": {
+        "name": "Can view longitud cabello",
+        "content_type": 58,
+        "codename": "view_longitudcabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 233,
+    "fields": {
+        "name": "Can add medio reconocimiento",
+        "content_type": 59,
+        "codename": "add_medioreconocimiento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 234,
+    "fields": {
+        "name": "Can change medio reconocimiento",
+        "content_type": 59,
+        "codename": "change_medioreconocimiento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 235,
+    "fields": {
+        "name": "Can delete medio reconocimiento",
+        "content_type": 59,
+        "codename": "delete_medioreconocimiento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 236,
+    "fields": {
+        "name": "Can view medio reconocimiento",
+        "content_type": 59,
+        "codename": "view_medioreconocimiento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 237,
+    "fields": {
+        "name": "Can add municipios",
+        "content_type": 60,
+        "codename": "add_municipios"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 238,
+    "fields": {
+        "name": "Can change municipios",
+        "content_type": 60,
+        "codename": "change_municipios"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 239,
+    "fields": {
+        "name": "Can delete municipios",
+        "content_type": 60,
+        "codename": "delete_municipios"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 240,
+    "fields": {
+        "name": "Can view municipios",
+        "content_type": 60,
+        "codename": "view_municipios"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 241,
+    "fields": {
+        "name": "Can add municipio semefo",
+        "content_type": 61,
+        "codename": "add_municipiosemefo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 242,
+    "fields": {
+        "name": "Can change municipio semefo",
+        "content_type": 61,
+        "codename": "change_municipiosemefo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 243,
+    "fields": {
+        "name": "Can delete municipio semefo",
+        "content_type": 61,
+        "codename": "delete_municipiosemefo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 244,
+    "fields": {
+        "name": "Can view municipio semefo",
+        "content_type": 61,
+        "codename": "view_municipiosemefo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 245,
+    "fields": {
+        "name": "Can add municipio zacatecas",
+        "content_type": 62,
+        "codename": "add_municipiozacatecas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 246,
+    "fields": {
+        "name": "Can change municipio zacatecas",
+        "content_type": 62,
+        "codename": "change_municipiozacatecas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 247,
+    "fields": {
+        "name": "Can delete municipio zacatecas",
+        "content_type": 62,
+        "codename": "delete_municipiozacatecas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 248,
+    "fields": {
+        "name": "Can view municipio zacatecas",
+        "content_type": 62,
+        "codename": "view_municipiozacatecas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 249,
+    "fields": {
+        "name": "Can add nivel calvicie",
+        "content_type": 63,
+        "codename": "add_nivelcalvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 250,
+    "fields": {
+        "name": "Can change nivel calvicie",
+        "content_type": 63,
+        "codename": "change_nivelcalvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 251,
+    "fields": {
+        "name": "Can delete nivel calvicie",
+        "content_type": 63,
+        "codename": "delete_nivelcalvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 252,
+    "fields": {
+        "name": "Can view nivel calvicie",
+        "content_type": 63,
+        "codename": "view_nivelcalvicie"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 253,
+    "fields": {
+        "name": "Can add paises",
+        "content_type": 64,
+        "codename": "add_paises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 254,
+    "fields": {
+        "name": "Can change paises",
+        "content_type": 64,
+        "codename": "change_paises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 255,
+    "fields": {
+        "name": "Can delete paises",
+        "content_type": 64,
+        "codename": "delete_paises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 256,
+    "fields": {
+        "name": "Can view paises",
+        "content_type": 64,
+        "codename": "view_paises"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 257,
+    "fields": {
+        "name": "Can add parentesco",
+        "content_type": 65,
+        "codename": "add_parentesco"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 258,
+    "fields": {
+        "name": "Can change parentesco",
+        "content_type": 65,
+        "codename": "change_parentesco"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 259,
+    "fields": {
+        "name": "Can delete parentesco",
+        "content_type": 65,
+        "codename": "delete_parentesco"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 260,
+    "fields": {
+        "name": "Can view parentesco",
+        "content_type": 65,
+        "codename": "view_parentesco"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 261,
+    "fields": {
+        "name": "Can add perfil nariz",
+        "content_type": 66,
+        "codename": "add_perfilnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 262,
+    "fields": {
+        "name": "Can change perfil nariz",
+        "content_type": 66,
+        "codename": "change_perfilnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 263,
+    "fields": {
+        "name": "Can delete perfil nariz",
+        "content_type": 66,
+        "codename": "delete_perfilnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 264,
+    "fields": {
+        "name": "Can view perfil nariz",
+        "content_type": 66,
+        "codename": "view_perfilnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 265,
+    "fields": {
+        "name": "Can add posicion cadaverica cpm",
+        "content_type": 67,
+        "codename": "add_posicioncadavericacpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 266,
+    "fields": {
+        "name": "Can change posicion cadaverica cpm",
+        "content_type": 67,
+        "codename": "change_posicioncadavericacpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 267,
+    "fields": {
+        "name": "Can delete posicion cadaverica cpm",
+        "content_type": 67,
+        "codename": "delete_posicioncadavericacpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 268,
+    "fields": {
+        "name": "Can view posicion cadaverica cpm",
+        "content_type": 67,
+        "codename": "view_posicioncadavericacpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 269,
+    "fields": {
+        "name": "Can add relacion anatomica inhumacion",
+        "content_type": 68,
+        "codename": "add_relacionanatomicainhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 270,
+    "fields": {
+        "name": "Can change relacion anatomica inhumacion",
+        "content_type": 68,
+        "codename": "change_relacionanatomicainhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 271,
+    "fields": {
+        "name": "Can delete relacion anatomica inhumacion",
+        "content_type": 68,
+        "codename": "delete_relacionanatomicainhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 272,
+    "fields": {
+        "name": "Can view relacion anatomica inhumacion",
+        "content_type": 68,
+        "codename": "view_relacionanatomicainhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 273,
+    "fields": {
+        "name": "Can add separacion orejas",
+        "content_type": 69,
+        "codename": "add_separacionorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 274,
+    "fields": {
+        "name": "Can change separacion orejas",
+        "content_type": 69,
+        "codename": "change_separacionorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 275,
+    "fields": {
+        "name": "Can delete separacion orejas",
+        "content_type": 69,
+        "codename": "delete_separacionorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 276,
+    "fields": {
+        "name": "Can view separacion orejas",
+        "content_type": 69,
+        "codename": "view_separacionorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 277,
+    "fields": {
+        "name": "Can add sexo",
+        "content_type": 70,
+        "codename": "add_sexo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 278,
+    "fields": {
+        "name": "Can change sexo",
+        "content_type": 70,
+        "codename": "change_sexo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 279,
+    "fields": {
+        "name": "Can delete sexo",
+        "content_type": 70,
+        "codename": "delete_sexo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 280,
+    "fields": {
+        "name": "Can view sexo",
+        "content_type": 70,
+        "codename": "view_sexo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 281,
+    "fields": {
+        "name": "Can add tamanio boca",
+        "content_type": 71,
+        "codename": "add_tamanioboca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 282,
+    "fields": {
+        "name": "Can change tamanio boca",
+        "content_type": 71,
+        "codename": "change_tamanioboca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 283,
+    "fields": {
+        "name": "Can delete tamanio boca",
+        "content_type": 71,
+        "codename": "delete_tamanioboca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 284,
+    "fields": {
+        "name": "Can view tamanio boca",
+        "content_type": 71,
+        "codename": "view_tamanioboca"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 285,
+    "fields": {
+        "name": "Can add tamanio lobulo orejas",
+        "content_type": 72,
+        "codename": "add_tamaniolobuloorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 286,
+    "fields": {
+        "name": "Can change tamanio lobulo orejas",
+        "content_type": 72,
+        "codename": "change_tamaniolobuloorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 287,
+    "fields": {
+        "name": "Can delete tamanio lobulo orejas",
+        "content_type": 72,
+        "codename": "delete_tamaniolobuloorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 288,
+    "fields": {
+        "name": "Can view tamanio lobulo orejas",
+        "content_type": 72,
+        "codename": "view_tamaniolobuloorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 289,
+    "fields": {
+        "name": "Can add tamanio nariz",
+        "content_type": 73,
+        "codename": "add_tamanionariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 290,
+    "fields": {
+        "name": "Can change tamanio nariz",
+        "content_type": 73,
+        "codename": "change_tamanionariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 291,
+    "fields": {
+        "name": "Can delete tamanio nariz",
+        "content_type": 73,
+        "codename": "delete_tamanionariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 292,
+    "fields": {
+        "name": "Can view tamanio nariz",
+        "content_type": 73,
+        "codename": "view_tamanionariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 293,
+    "fields": {
+        "name": "Can add tamanio ojos",
+        "content_type": 74,
+        "codename": "add_tamanioojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 294,
+    "fields": {
+        "name": "Can change tamanio ojos",
+        "content_type": 74,
+        "codename": "change_tamanioojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 295,
+    "fields": {
+        "name": "Can delete tamanio ojos",
+        "content_type": 74,
+        "codename": "delete_tamanioojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 296,
+    "fields": {
+        "name": "Can view tamanio ojos",
+        "content_type": 74,
+        "codename": "view_tamanioojos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 297,
+    "fields": {
+        "name": "Can add tanaio orejas",
+        "content_type": 75,
+        "codename": "add_tanaioorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 298,
+    "fields": {
+        "name": "Can change tanaio orejas",
+        "content_type": 75,
+        "codename": "change_tanaioorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 299,
+    "fields": {
+        "name": "Can delete tanaio orejas",
+        "content_type": 75,
+        "codename": "delete_tanaioorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 300,
+    "fields": {
+        "name": "Can view tanaio orejas",
+        "content_type": 75,
+        "codename": "view_tanaioorejas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 301,
+    "fields": {
+        "name": "Can add temporalidad dia",
+        "content_type": 76,
+        "codename": "add_temporalidaddia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 302,
+    "fields": {
+        "name": "Can change temporalidad dia",
+        "content_type": 76,
+        "codename": "change_temporalidaddia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 303,
+    "fields": {
+        "name": "Can delete temporalidad dia",
+        "content_type": 76,
+        "codename": "delete_temporalidaddia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 304,
+    "fields": {
+        "name": "Can view temporalidad dia",
+        "content_type": 76,
+        "codename": "view_temporalidaddia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 305,
+    "fields": {
+        "name": "Can add terminacion nariz",
+        "content_type": 77,
+        "codename": "add_terminacionnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 306,
+    "fields": {
+        "name": "Can change terminacion nariz",
+        "content_type": 77,
+        "codename": "change_terminacionnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 307,
+    "fields": {
+        "name": "Can delete terminacion nariz",
+        "content_type": 77,
+        "codename": "delete_terminacionnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 308,
+    "fields": {
+        "name": "Can view terminacion nariz",
+        "content_type": 77,
+        "codename": "view_terminacionnariz"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 309,
+    "fields": {
+        "name": "Can add textura cabello",
+        "content_type": 78,
+        "codename": "add_texturacabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 310,
+    "fields": {
+        "name": "Can change textura cabello",
+        "content_type": 78,
+        "codename": "change_texturacabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 311,
+    "fields": {
+        "name": "Can delete textura cabello",
+        "content_type": 78,
+        "codename": "delete_texturacabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 312,
+    "fields": {
+        "name": "Can view textura cabello",
+        "content_type": 78,
+        "codename": "view_texturacabello"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 313,
+    "fields": {
+        "name": "Can add tipo evento",
+        "content_type": 79,
+        "codename": "add_tipoevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 314,
+    "fields": {
+        "name": "Can change tipo evento",
+        "content_type": 79,
+        "codename": "change_tipoevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 315,
+    "fields": {
+        "name": "Can delete tipo evento",
+        "content_type": 79,
+        "codename": "delete_tipoevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 316,
+    "fields": {
+        "name": "Can view tipo evento",
+        "content_type": 79,
+        "codename": "view_tipoevento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 317,
+    "fields": {
+        "name": "Can add tipo inhumacion",
+        "content_type": 80,
+        "codename": "add_tipoinhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 318,
+    "fields": {
+        "name": "Can change tipo inhumacion",
+        "content_type": 80,
+        "codename": "change_tipoinhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 319,
+    "fields": {
+        "name": "Can delete tipo inhumacion",
+        "content_type": 80,
+        "codename": "delete_tipoinhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 320,
+    "fields": {
+        "name": "Can view tipo inhumacion",
+        "content_type": 80,
+        "codename": "view_tipoinhumacion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 321,
+    "fields": {
+        "name": "Can add tipo perfil",
+        "content_type": 81,
+        "codename": "add_tipoperfil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 322,
+    "fields": {
+        "name": "Can change tipo perfil",
+        "content_type": 81,
+        "codename": "change_tipoperfil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 323,
+    "fields": {
+        "name": "Can delete tipo perfil",
+        "content_type": 81,
+        "codename": "delete_tipoperfil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 324,
+    "fields": {
+        "name": "Can view tipo perfil",
+        "content_type": 81,
+        "codename": "view_tipoperfil"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 325,
+    "fields": {
+        "name": "Can add tipo resguardo",
+        "content_type": 82,
+        "codename": "add_tiporesguardo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 326,
+    "fields": {
+        "name": "Can change tipo resguardo",
+        "content_type": 82,
+        "codename": "change_tiporesguardo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 327,
+    "fields": {
+        "name": "Can delete tipo resguardo",
+        "content_type": 82,
+        "codename": "delete_tiporesguardo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 328,
+    "fields": {
+        "name": "Can view tipo resguardo",
+        "content_type": 82,
+        "codename": "view_tiporesguardo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 329,
+    "fields": {
+        "name": "Can add tipos muestras",
+        "content_type": 83,
+        "codename": "add_tiposmuestras"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 330,
+    "fields": {
+        "name": "Can change tipos muestras",
+        "content_type": 83,
+        "codename": "change_tiposmuestras"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 331,
+    "fields": {
+        "name": "Can delete tipos muestras",
+        "content_type": 83,
+        "codename": "delete_tiposmuestras"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 332,
+    "fields": {
+        "name": "Can view tipos muestras",
+        "content_type": 83,
+        "codename": "view_tiposmuestras"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 333,
+    "fields": {
+        "name": "Can add ubicacion cpm",
+        "content_type": 84,
+        "codename": "add_ubicacioncpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 334,
+    "fields": {
+        "name": "Can change ubicacion cpm",
+        "content_type": 84,
+        "codename": "change_ubicacioncpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 335,
+    "fields": {
+        "name": "Can delete ubicacion cpm",
+        "content_type": 84,
+        "codename": "delete_ubicacioncpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 336,
+    "fields": {
+        "name": "Can view ubicacion cpm",
+        "content_type": 84,
+        "codename": "view_ubicacioncpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 337,
+    "fields": {
+        "name": "Can add vestimenta cpm",
+        "content_type": 85,
+        "codename": "add_vestimentacpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 338,
+    "fields": {
+        "name": "Can change vestimenta cpm",
+        "content_type": 85,
+        "codename": "change_vestimentacpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 339,
+    "fields": {
+        "name": "Can delete vestimenta cpm",
+        "content_type": 85,
+        "codename": "delete_vestimentacpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 340,
+    "fields": {
+        "name": "Can view vestimenta cpm",
+        "content_type": 85,
+        "codename": "view_vestimentacpm"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 341,
+    "fields": {
+        "name": "Can add vinculo biologico",
+        "content_type": 86,
+        "codename": "add_vinculobiologico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 342,
+    "fields": {
+        "name": "Can change vinculo biologico",
+        "content_type": 86,
+        "codename": "change_vinculobiologico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 343,
+    "fields": {
+        "name": "Can delete vinculo biologico",
+        "content_type": 86,
+        "codename": "delete_vinculobiologico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 344,
+    "fields": {
+        "name": "Can view vinculo biologico",
+        "content_type": 86,
+        "codename": "view_vinculobiologico"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 345,
+    "fields": {
+        "name": "Can add departamento",
+        "content_type": 87,
+        "codename": "add_departamento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 346,
+    "fields": {
+        "name": "Can change departamento",
+        "content_type": 87,
+        "codename": "change_departamento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 347,
+    "fields": {
+        "name": "Can delete departamento",
+        "content_type": 87,
+        "codename": "delete_departamento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 348,
+    "fields": {
+        "name": "Can view departamento",
+        "content_type": 87,
+        "codename": "view_departamento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 349,
+    "fields": {
+        "name": "Can add dependencia",
+        "content_type": 88,
+        "codename": "add_dependencia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 350,
+    "fields": {
+        "name": "Can change dependencia",
+        "content_type": 88,
+        "codename": "change_dependencia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 351,
+    "fields": {
+        "name": "Can delete dependencia",
+        "content_type": 88,
+        "codename": "delete_dependencia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 352,
+    "fields": {
+        "name": "Can view dependencia",
+        "content_type": 88,
+        "codename": "view_dependencia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 353,
+    "fields": {
+        "name": "Can add perito",
+        "content_type": 89,
+        "codename": "add_perito"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 354,
+    "fields": {
+        "name": "Can change perito",
+        "content_type": 89,
+        "codename": "change_perito"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 355,
+    "fields": {
+        "name": "Can delete perito",
+        "content_type": 89,
+        "codename": "delete_perito"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 356,
+    "fields": {
+        "name": "Can view perito",
+        "content_type": 89,
+        "codename": "view_perito"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 357,
+    "fields": {
+        "name": "Can add sede acnid",
+        "content_type": 90,
+        "codename": "add_sedeacnid"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 358,
+    "fields": {
+        "name": "Can change sede acnid",
+        "content_type": 90,
+        "codename": "change_sedeacnid"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 359,
+    "fields": {
+        "name": "Can delete sede acnid",
+        "content_type": 90,
+        "codename": "delete_sedeacnid"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 360,
+    "fields": {
+        "name": "Can view sede acnid",
+        "content_type": 90,
+        "codename": "view_sedeacnid"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 361,
+    "fields": {
+        "name": "Can add tipo muestra",
+        "content_type": 83,
+        "codename": "add_tipomuestra"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 362,
+    "fields": {
+        "name": "Can change tipo muestra",
+        "content_type": 83,
+        "codename": "change_tipomuestra"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 363,
+    "fields": {
+        "name": "Can delete tipo muestra",
+        "content_type": 83,
+        "codename": "delete_tipomuestra"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 364,
+    "fields": {
+        "name": "Can view tipo muestra",
+        "content_type": 83,
+        "codename": "view_tipomuestra"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$ses9N0ENLUE8uGIkv6tPGI$7Bsb9HQ2ztsZaO4k6H/RUL6SwraLs9iHWnhFNZubzhs=",
+        "last_login": "2024-06-11T21:50:43.997Z",
+        "is_superuser": true,
+        "username": "devjare",
+        "first_name": "",
+        "last_name": "",
+        "email": "devjare@outlook.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-06-11T19:42:50.659Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$NyOGVKYcOCNdhlZXo8U9jZ$23I3oNZVuw5RYjd4kgic+FMg68gJ26WWKN36+OJ5dN4=",
+        "last_login": "2024-06-11T21:47:03.537Z",
+        "is_superuser": false,
+        "username": "newuser",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-06-11T21:46:20Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "api",
+        "model": "casocni"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "api",
+        "model": "ojos"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "api",
+        "model": "caracteristicasindividualizantes"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "api",
+        "model": "agentemp"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "api",
+        "model": "aletasnariz"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "api",
+        "model": "alturafrente"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "api",
+        "model": "ambientesitio"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "api",
+        "model": "amp_uei_inv"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "api",
+        "model": "anchurafrente"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "api",
+        "model": "aparienciaracial"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "api",
+        "model": "areareconocimientopositivo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "api",
+        "model": "barba"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "api",
+        "model": "bigote"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+        "app_label": "api",
+        "model": "cabellocalvicie"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+        "app_label": "api",
+        "model": "calvicie"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+        "app_label": "api",
+        "model": "cantidadcabello"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+        "app_label": "api",
+        "model": "caracteristicasextraordinariasfrente"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+        "app_label": "api",
+        "model": "carpetainvestigacion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 25,
+    "fields": {
+        "app_label": "api",
+        "model": "casoci"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 26,
+    "fields": {
+        "app_label": "api",
+        "model": "circunstanciascpmhallazgo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 27,
+    "fields": {
+        "app_label": "api",
+        "model": "circunstanciasextraordinarias"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 28,
+    "fields": {
+        "app_label": "api",
+        "model": "clasificacionevento"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 29,
+    "fields": {
+        "app_label": "api",
+        "model": "climasitio"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 30,
+    "fields": {
+        "app_label": "api",
+        "model": "colocacioncpm"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 31,
+    "fields": {
+        "app_label": "api",
+        "model": "colorcabello"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 32,
+    "fields": {
+        "app_label": "api",
+        "model": "colorojos"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 33,
+    "fields": {
+        "app_label": "api",
+        "model": "colortez"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 34,
+    "fields": {
+        "app_label": "api",
+        "model": "complexion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 35,
+    "fields": {
+        "app_label": "api",
+        "model": "criminalistacampo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 36,
+    "fields": {
+        "app_label": "api",
+        "model": "departamentos"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 37,
+    "fields": {
+        "app_label": "api",
+        "model": "distritojudicial"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 38,
+    "fields": {
+        "app_label": "api",
+        "model": "elementobiologico"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 39,
+    "fields": {
+        "app_label": "api",
+        "model": "elementosbiologicosreferenciales"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 40,
+    "fields": {
+        "app_label": "api",
+        "model": "espacioespecifico"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 41,
+    "fields": {
+        "app_label": "api",
+        "model": "estadoactual"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 42,
+    "fields": {
+        "app_label": "api",
+        "model": "estadopreservacion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 43,
+    "fields": {
+        "app_label": "api",
+        "model": "estadorepublica"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 44,
+    "fields": {
+        "app_label": "api",
+        "model": "flexiondelcuerpocpm"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 45,
+    "fields": {
+        "app_label": "api",
+        "model": "formacejas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 46,
+    "fields": {
+        "app_label": "api",
+        "model": "formacontornosuperiorfrente"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 47,
+    "fields": {
+        "app_label": "api",
+        "model": "formamenton"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 48,
+    "fields": {
+        "app_label": "api",
+        "model": "formanariz"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 49,
+    "fields": {
+        "app_label": "api",
+        "model": "formaojos"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 50,
+    "fields": {
+        "app_label": "api",
+        "model": "formaorejas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 51,
+    "fields": {
+        "app_label": "api",
+        "model": "formarostro"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 52,
+    "fields": {
+        "app_label": "api",
+        "model": "grosorcejas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 53,
+    "fields": {
+        "app_label": "api",
+        "model": "individuosinhumacion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 54,
+    "fields": {
+        "app_label": "api",
+        "model": "insercionlobuloorejas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 55,
+    "fields": {
+        "app_label": "api",
+        "model": "insercionprofundidadojos"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 56,
+    "fields": {
+        "app_label": "api",
+        "model": "integridadcadaverica"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 57,
+    "fields": {
+        "app_label": "api",
+        "model": "labiosboca"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 58,
+    "fields": {
+        "app_label": "api",
+        "model": "longitudcabello"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 59,
+    "fields": {
+        "app_label": "api",
+        "model": "medioreconocimiento"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 60,
+    "fields": {
+        "app_label": "api",
+        "model": "municipios"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 61,
+    "fields": {
+        "app_label": "api",
+        "model": "municipiosemefo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 62,
+    "fields": {
+        "app_label": "api",
+        "model": "municipiozacatecas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 63,
+    "fields": {
+        "app_label": "api",
+        "model": "nivelcalvicie"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 64,
+    "fields": {
+        "app_label": "api",
+        "model": "paises"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 65,
+    "fields": {
+        "app_label": "api",
+        "model": "parentesco"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 66,
+    "fields": {
+        "app_label": "api",
+        "model": "perfilnariz"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 67,
+    "fields": {
+        "app_label": "api",
+        "model": "posicioncadavericacpm"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 68,
+    "fields": {
+        "app_label": "api",
+        "model": "relacionanatomicainhumacion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 69,
+    "fields": {
+        "app_label": "api",
+        "model": "separacionorejas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 70,
+    "fields": {
+        "app_label": "api",
+        "model": "sexo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 71,
+    "fields": {
+        "app_label": "api",
+        "model": "tamanioboca"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 72,
+    "fields": {
+        "app_label": "api",
+        "model": "tamaniolobuloorejas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 73,
+    "fields": {
+        "app_label": "api",
+        "model": "tamanionariz"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 74,
+    "fields": {
+        "app_label": "api",
+        "model": "tamanioojos"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 75,
+    "fields": {
+        "app_label": "api",
+        "model": "tanaioorejas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 76,
+    "fields": {
+        "app_label": "api",
+        "model": "temporalidaddia"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 77,
+    "fields": {
+        "app_label": "api",
+        "model": "terminacionnariz"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 78,
+    "fields": {
+        "app_label": "api",
+        "model": "texturacabello"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 79,
+    "fields": {
+        "app_label": "api",
+        "model": "tipoevento"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 80,
+    "fields": {
+        "app_label": "api",
+        "model": "tipoinhumacion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 81,
+    "fields": {
+        "app_label": "api",
+        "model": "tipoperfil"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 82,
+    "fields": {
+        "app_label": "api",
+        "model": "tiporesguardo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 83,
+    "fields": {
+        "app_label": "api",
+        "model": "tipomuestra"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 84,
+    "fields": {
+        "app_label": "api",
+        "model": "ubicacioncpm"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 85,
+    "fields": {
+        "app_label": "api",
+        "model": "vestimentacpm"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 86,
+    "fields": {
+        "app_label": "api",
+        "model": "vinculobiologico"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 87,
+    "fields": {
+        "app_label": "api",
+        "model": "departamento"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 88,
+    "fields": {
+        "app_label": "api",
+        "model": "dependencia"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 89,
+    "fields": {
+        "app_label": "api",
+        "model": "perito"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 90,
+    "fields": {
+        "app_label": "api",
+        "model": "sedeacnid"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "czvaqjkik5izjnn9yibrsy5yej5wkj43",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSFgL4W6dN9vaO4DpGogKe3K-O_apAvdnpk5LzXhtuZpa3GZZlEXZdXpdyPkRyw7kDuWW9Vcy7rMpHdFH7TpsUp8Xg_37yBjy98aBTxT6Iwjx4wuQvKdT05o8BZ7MUBMSUIKFiBaNOjZeOvE8ADQn9X7AwZyOFU:1sH9IO:4U9vDAbUOGjDa3DxHJl3ekopuBrHe1tY1sn-pWJOOHo",
+        "expire_date": "2024-06-25T21:44:48.370Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jjp22lo8hwttzaravofmx5lwsj7s3cio",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSFgL4W6dN9vaO4DpGogKe3K-O_apAvdnpk5LzXhtuZpa3GZZlEXZdXpdyPkRyw7kDuWW9Vcy7rMpHdFH7TpsUp8Xg_37yBjy98aBTxT6Iwjx4wuQvKdT05o8BZ7MUBMSUIKFiBaNOjZeOvE8ADQn9X7AwZyOFU:1sH9O7:oUyi8ty5l7h-8aPisL_kMUWnLw-mzrG95_hOw1KgqY8",
+        "expire_date": "2024-06-25T21:50:43.999Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ohba8w54ba175xz3rrf02zysua5ck5de",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAUBf-FtSFgL4W6dN9vaO4DpGogKe3K-O_apAvdnpk5LzXhtuZpa3GZZlEXZdXpdyPkRyw7kDuWW9Vcy7rMpHdFH7TpsUp8Xg_37yBjy98aBTxT6Iwjx4wuQvKdT05o8BZ7MUBMSUIKFiBaNOjZeOvE8ADQn9X7AwZyOFU:1sH9J5:cq62HjIjKQMqqHk3ktZXfAE-jxSs4Lj9pQgrrPJke60",
+        "expire_date": "2024-06-25T21:45:31.536Z"
+    }
+},
+{
+    "model": "api.sedeacnid",
+    "pk": 1,
+    "fields": {
+        "nombre": "Zacatecas",
+        "descripcion": "Region de zacatecas"
+    }
+},
+{
+    "model": "api.sedeacnid",
+    "pk": 2,
+    "fields": {
+        "nombre": "Fresnillo",
+        "descripcion": "Region de fresnillo"
+    }
+},
+{
+    "model": "api.dependencia",
+    "pk": 1,
+    "fields": {
+        "nombre": "DGSP",
+        "descripcion": "Direccion general de servicios periciales.",
+        "region": 1
+    }
+},
+{
+    "model": "api.dependencia",
+    "pk": 2,
+    "fields": {
+        "nombre": "FGJEZ",
+        "descripcion": "Fiscalia General Judicial del Estado de Zacatecas",
+        "region": 2
+    }
+},
+{
+    "model": "api.departamento",
+    "pk": 1,
+    "fields": {
+        "nombre": "Genetica",
+        "descripcion": "Departamento de genetica de la DGSP",
+        "dependencia": 1
+    }
+},
+{
+    "model": "api.departamento",
+    "pk": 2,
+    "fields": {
+        "nombre": "Lofoscopia",
+        "descripcion": "Departamento de lofoscopia DGSP",
+        "dependencia": 1
+    }
+},
+{
+    "model": "api.departamento",
+    "pk": 3,
+    "fields": {
+        "nombre": "ACNID",
+        "descripcion": "Departamento de cadaveres no identificados y personas desaparecidas",
+        "dependencia": 1
+    }
+},
+{
+    "model": "api.departamento",
+    "pk": 4,
+    "fields": {
+        "nombre": "Genetica",
+        "descripcion": "Genetica de la fiscalia",
+        "dependencia": 2
+    }
+},
+{
+    "model": "api.departamento",
+    "pk": 5,
+    "fields": {
+        "nombre": "Lofosciopia",
+        "descripcion": "Departamenteo de lofoscopia de la FGJEZ",
+        "dependencia": 2
+    }
+},
+{
+    "model": "api.departamento",
+    "pk": 6,
+    "fields": {
+        "nombre": "Medicina Legal",
+        "descripcion": "Departamento de medicina legal de la DGSP",
+        "dependencia": 1
+    }
+},
+{
+    "model": "api.tipomuestra",
+    "pk": 1,
+    "fields": {
+        "nombre": "Pelvis",
+        "descripcion": "Muestra de pelvis",
+        "departamento": 1
+    }
+},
+{
+    "model": "api.tipomuestra",
+    "pk": 2,
+    "fields": {
+        "nombre": "Costilla",
+        "descripcion": "Toma sobre la costilla.",
+        "departamento": 1
+    }
+},
+{
+    "model": "api.perito",
+    "pk": 1,
+    "fields": {
+        "nombres": "Jose Andres",
+        "apellidos": "Reyna Espinoza",
+        "numero_empleado": "REEA980907",
+        "dependencia": 1,
+        "departmento": 3
+    }
+},
+{
+    "model": "api.perito",
+    "pk": 2,
+    "fields": {
+        "nombres": "Brucelee",
+        "apellidos": "Campos",
+        "numero_empleado": "BCRCAMPOS",
+        "dependencia": 2,
+        "departmento": 4
+    }
+},
+{
+    "model": "api.perito",
+    "pk": 3,
+    "fields": {
+        "nombres": "Empleado",
+        "apellidos": "Apellido Empleado",
+        "numero_empleado": "NUMEROUNODOSTRES",
+        "dependencia": 1,
+        "departmento": 6
+    }
+}
+]
