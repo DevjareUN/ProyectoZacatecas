@@ -15,6 +15,25 @@ from frontend.forms import FormACNID
 
 from .forms import FormDatosGeneralesACNID, FormMediaFiliacion, FormMedicinaLegal
 
+# CONSTANTES
+METADATA_ACNID = { 
+                  "no_control_medleg": { "display_name": "No. Control MedLeg" },
+                  "no_control_acnid": { "display_name": "No. Control ACNID" }, 
+                  "fecha_ingreso": { "display_name": "Fecha ingreso" },
+                  "edad": { "display_name": "Edad" },
+                  "foto_rostro": { "display_name": "Foto rostro" },
+                  "foto_panoramica": { "display_name": "Foto panoramica" },
+                  "caso": { "display_name": "Caso CNI" }, 
+                  "estatus": { 
+                              "display_name": "Estado actual",
+                              "catalogue": list(EstadoActual.objects.all().values_list("nombre", flat=True))
+                              }, 
+                  "sexo": { 
+                           "display_name": "Sexo" ,
+                           "catalogue": list(Sexo.objects.all().values_list("nombre", flat=True))
+                           },
+                  }
+
 # Create your views here.
 def index(request):
     return render(request, template_name="frontend/home.html", context={ "data": 123 })
@@ -43,30 +62,13 @@ class Home(APIView):
             return render(request, 'medicina_legal/home.html', {"message": "Hello, ML Admin!, Showing quick info..."})
         elif request.user.groups.filter(name = 'acnid').exists():
     # TODO: SETUP IMAGE SERVING ON VIEWS WITH THE PRIMARY KEY OF THE 'CASO'
-            lista_estatus = list(EstadoActual.objects.all().values_list("nombre", flat=True))
-            lista_sexo = list(Sexo.objects.all().values_list("nombre", flat=True))
-            metadata = { 
-                        "caso": { "display_name": "Caso CNI" }, 
-                        "estatus": { 
-                                    "display_name": "Estado actual",
-                                    "catalogue": lista_estatus
-                                    }, 
-                        "no_control_acnid": { "display_name": "No. Control ACNID" }, 
-                        "no_control_medleg": { "display_name": "No. Control MedLeg" },
-                        "fecha_ingreso": { "display_name": "Fecha ingreso" },
-                        "edad": { "display_name": "Edad" },
-                        "sexo": { 
-                                 "display_name": "Sexo" ,
-                                 "catalogue": lista_sexo
-                                 },
-                        "foto_rostro": { "display_name": "Foto rostro" },
-                        "foto_panoramica": { "display_name": "Foto panoramica" },
-                        }
 
-            return render(request, 'acnid/home.html', { "meta": metadata })
+            return render(request, 'acnid/home.html', { "meta": METADATA_ACNID })
         else:
             return redirect("login")
 
+def get_acnid_table_metadata(request):
+    return JsonResponse(METADATA_ACNID)
 
 class Capture(APIView):
     permission_classes = [IsAuthenticated]  # Ensure the user is authenticated
@@ -79,6 +81,9 @@ class Capture(APIView):
                                                                    })
         elif request.user.groups.filter(name = 'acnid').exists():
             form = FormACNID()
+            if 'pk' in kwargs:
+                form = FormACNID(kwargs['pk'])
+
             return render(request, 'acnid/capture.html', { "data": list(Caso.objects.all()), "form": form })
         else:
             return redirect("/login")
@@ -99,18 +104,12 @@ class Capture(APIView):
             if form_datos_generales.is_valid():
                 # Process and save form_datos_generales data
                 print(f"Datos generales desde formulario: {form_datos_generales.cleaned_data}")
-                # Process and save form_media_filiacion data
-                # Extract primary keys from related objects
-                estatus_pk = form_datos_generales.cleaned_data['estatus'].pk
-                sexo_pk = form_datos_generales.cleaned_data['sexo'].pk
-
-                # Modify cleaned data to use primary keys
-                form_datos_generales.cleaned_data['estatus'] = estatus_pk
-                form_datos_generales.cleaned_data['sexo'] = sexo_pk
-                cleaned_data = form_datos_generales.cleaned_data
-                cleaned_data['caso'] = caso_id
                 
-                estatus_pk = form_datos_generales.cleaned_data['estatus'].pk
+                cleaned_data = {}
+                cleaned_data = form_datos_generales.cleaned_data
+                cleaned_data['estatus'] = cleaned_data['estatus'].pk
+                cleaned_data['sexo'] = cleaned_data['sexo'].pk
+                cleaned_data['caso'] = caso_id
 
                 serializer = DatosGeneralesACNIDSerializer(data=cleaned_data)
                 if serializer.is_valid():

@@ -9,4 +9,6 @@ urlpatterns = [
         path("home/", views.Home.as_view(), name="home"),
         path("lookup/", views.Lookup.as_view(), name="lookup"),
         path("capture/", views.Capture.as_view(), name="capture"),
+        path("capture/<int:pk>", views.Capture.as_view(), name="capture"),
+        path("get_metadata_acnid/", views.get_acnid_table_metadata),
         ]

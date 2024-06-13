@@ -6,7 +6,7 @@
 <div class="p-2 m-2 w-100 d-flex justify-content-center container-fluid">
 	<div class="d-flex flex-column flex-nowrap overflow-auto">
 		<h1>Home ACNID, welcome {{request.user}}</h1>
-		<table id="table-home" class="table thead-dark">
+		<table id="table-home" class="table thead-primary">
 			<thead>
 				<!-- HEADERS -->
 				<tr>
@@ -22,8 +22,8 @@
 						{% for key, value in meta.items %}
 						<td>
 							{% if value.catalogue %}
-							<select onchange="filterBy(event, '{{key}}')">
-								<option value="all">All</option>
+							<select onchange="filterBy(event, '{{key}}')" class="form-control">
+								<option value="all">Todos</option>
 								{% for option in value.catalogue %}
 								<option value="{{ option }}">{{ option }}</option>
 								{% endfor %}

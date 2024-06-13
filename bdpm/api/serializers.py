@@ -176,9 +176,23 @@ class MediaFiliacionSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class DatosGeneralesACNIDSerializer(serializers.ModelSerializer):
+
+    estatus = serializers.SerializerMethodField()
+    sexo = serializers.SerializerMethodField()
+    caso = serializers.SerializerMethodField()
+
     class Meta:
         model = DatosGeneralesACNID
         fields = "__all__"
+   
+    def get_estatus(self, obj):
+        return str(obj.estatus)
+
+    def get_sexo(self, obj):
+        return str(obj.sexo)
+
+    def get_caso(self, obj):
+        return str(obj.caso)
 
 class DatosCriminalisticaCampoSerializer(serializers.ModelSerializer):
     class Meta:

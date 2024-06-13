@@ -8,16 +8,16 @@ document.getElementById('formDatosGeneralesAcnid').addEventListener('submit', fu
 	console.log("Form data: ", formData)
 	
 	// Convert foreign key objects to their primary keys
-    let estatus = formData.get('estatus');
-	console.log(`Estatus to POST: ${estatus}`)
-    if (estatus && typeof estatus === 'object') {
-        formData.set('estatus', estatus.pk);
-    }
-    let sexo = formData.get('sexo');
-	console.log(`Sexo to POST: ${sexo}`)
-    if (sexo && typeof sexo === 'object') {
-        formData.set('sexo', sexo.pk);
-    }
+    // let estatus = formData.get('estatus');
+	// console.log(`Estatus to POST: ${estatus}`)
+    // if (estatus && typeof estatus === 'object') {
+    //     formData.set('estatus', estatus.pk);
+    // }
+    // let sexo = formData.get('sexo');
+	// console.log(`Sexo to POST: ${sexo}`)
+    // if (sexo && typeof sexo === 'object') {
+    //     formData.set('sexo', sexo.pk);
+    // }
 	
 	let casoId = document.getElementById("id_caso").value;
 	formData.append('caso', casoId)
@@ -47,11 +47,6 @@ document.getElementById('formMediaFiliacion').addEventListener('submit', functio
 	console.log("Submitting form MediaFiliacion manually!");
 	let form = this;
 	let formData = new FormData(form);
-	
-
-	let alturaFrente = formData.get('alturafrente');
-	console.log(`AlturaFrente to POST:`)
-	console.log(alturaFrente)
 
 	let casoId = document.getElementById("id_caso").value;
 	formData.append('caso', casoId)

@@ -316,8 +316,8 @@ class DatosGeneralesACNID(models.Model):
     edad = models.CharField(max_length=100)
     sexo = models.ForeignKey(Sexo, on_delete=CASCADE)
     # TODO: SETUP IMAGE SERVING ON VIEWS WITH THE PRIMARY KEY OF THE 'CASO'
-    foto_rostro = models.ImageField(upload_to=upload_to)
-    foto_panoramica = models.ImageField(upload_to=upload_to)
+    foto_rostro = models.ImageField(upload_to=upload_to, blank=True)
+    foto_panoramica = models.ImageField(upload_to=upload_to, blank=True)
 
 
 class DatosCriminalisticaCampo(models.Model):

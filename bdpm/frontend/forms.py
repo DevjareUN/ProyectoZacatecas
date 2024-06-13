@@ -67,7 +67,6 @@ class FormMedicinaLegal(forms.Form):
 # ==================================================================================
 # ============================ Formularios ACNID ===================================
 # ==================================================================================
-
 class FormMediaFiliacion(forms.ModelForm):
     
     class Meta: # type: ignore
@@ -84,6 +83,9 @@ class FormMediaFiliacion(forms.ModelForm):
         for field_name, field in self.fields.items():
             field.label = snake_to_spaces(field_name)
 
+        print(kwargs)
+        
+
 
 class FormDatosGeneralesACNID(forms.ModelForm):
     
@@ -99,17 +101,28 @@ class FormDatosGeneralesACNID(forms.ModelForm):
         super(FormDatosGeneralesACNID, self).__init__(*args, **kwargs)
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = 'form-control my-2'
+        
+        print(kwargs)
 
 
 class FormACNID(forms.Form):
-    # Fields from DatosMedicinaLegal
-    # datos_necro = forms.ModelChoiceField(queryset=DatosNecropsia.objects.all())
-    formDatosGenerales = FormDatosGeneralesACNID()
-    formMediaFiliacion = FormMediaFiliacion()
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, pk=None, *args, **kwargs):
         super(FormACNID, self).__init__(*args, **kwargs)
+        self.formDatosGenerales = FormDatosGeneralesACNID(pk=pk, *args, **kwargs)
+        self.formMediaFiliacion = FormMediaFiliacion(pk=pk, *args, **kwargs)
+        
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = 'form-control my-2'
+        
+        self.pk = kwargs.pop('pk', None)
 
-
+    def set_data(self, pk):
+        self.pk = pk
+        # Setup DatosGenerales
+        instance = DatosGeneralesACNID.objects.filter(caso__pk=pk)
+        for field_name, field in self.formDatosGenerales.fields.items():
+            if field_name in instance.__dict__:
+                pass
+        
+        # Setup MediaFiliacion

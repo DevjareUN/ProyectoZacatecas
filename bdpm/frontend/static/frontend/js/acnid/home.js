@@ -3,8 +3,7 @@ var loadedInfo = {}
 
 function editRecord(event) {
 	let id = event.srcElement.closest("tr").id
-	console.log(`Editing record with ID=${id}`)
-	window.location.href = `/edit/${id}`;
+	window.location.href = `/capture/${id}`;
 }
 
 function deleteRecord(event) {
@@ -13,7 +12,7 @@ function deleteRecord(event) {
 	window.location.href = `/delete/${id}`;
 }
 
-function buildTableRow(element) {
+function buildTableRow(element, metadata) {
 	console.log("\tBuilding table row...")
 	var row = document.createElement("tr")
 	// Edit button
@@ -34,14 +33,14 @@ function buildTableRow(element) {
 	deleteButton.addEventListener("click", deleteRecord)
 	rowCell.appendChild(deleteButton)
 	row.appendChild(rowCell)
-	
+
 	let rowId = ""
 	// rest of contents
-	for(var k in element) {
-		if(k == "id") {
-			rowId = element[k]
-			row.setAttribute("id", rowId)
-		} else if(k.includes("foto")) {
+	console.log(element)
+	console.log(metadata)
+	row.setAttribute("id", element['id'])
+	for(var k in metadata) {
+		if(k.includes("foto")) {
 			var rowCell = document.createElement("td")
 			rowCell.innerHTML = `<img src=${element[k]} width="128" height="128">`
 			row.appendChild(rowCell)
@@ -51,22 +50,22 @@ function buildTableRow(element) {
 			row.appendChild(rowCell)
 		}	
 	}
-	
+
 	row.append(rowCell)
 	return row
 }
 
-function populateTable(tableContent) {
+function populateTable(tableContent, metadata) {
 	var tbody = document.getElementById("table-home-body")
 	tbody.innerHTML = '' // Clear existing table data
 	for(idx in tableContent) {
-		row = buildTableRow(tableContent[idx])
+		row = buildTableRow(tableContent[idx], metadata)
 		tbody.appendChild(row)
 	}
 }
 
 var selectedTab = ""
-function loadTable() {
+function loadTable(metadata) {
 	// Don't make a request if the content is already shown
 	const req = new XMLHttpRequest();
 	const url=`/api/v1/datosgeneralesacnid/`;
@@ -80,7 +79,7 @@ function loadTable() {
 				const json = JSON.parse(res);
 				loadedInfo['DatosGenerales'] = json
 				window.localStorage.setItem("data", JSON.stringify(json))
-				populateTable(json)
+				populateTable(json, metadata)
 			} else {
 				console.error('Error fetching data:', req.status);
 			}
@@ -99,7 +98,7 @@ function filterBy(e, k) {
 		// filter by text
 		searchString = document.getElementById(`filter-by-${k}`).value
 	}
-	
+
 	let storedData = JSON.parse(window.localStorage.getItem("data"))	
 	if(searchString) {
 		let matches = storedData.filter(x => x[k].toString().includes(searchString) )
@@ -110,6 +109,16 @@ function filterBy(e, k) {
 }
 
 window.onload = () => {
-	loadTable()
+	fetchMetadata().then(metadata => {
+	loadTable(metadata)
+	})
 }
 
+function fetchMetadata() {
+    return fetch('/get_metadata_acnid/')
+    .then(response => response.json())
+    .then(metadata => metadata)
+    .catch(error => {
+        console.error('Error fetching metadata:', error);
+    });
+}
