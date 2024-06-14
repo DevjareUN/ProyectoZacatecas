@@ -68,31 +68,21 @@ class FormMedicinaLegal(forms.Form):
 # ============================ Formularios ACNID ===================================
 # ==================================================================================
 class FormMediaFiliacion(forms.ModelForm):
-    
     class Meta: # type: ignore
         model = MediaFiliacion
         fields = "__all__"
-        exclude = ['caso']  # Exclude specific fields
+        exclude = ['caso']
 
-    
     def __init__(self, *args, **kwargs):
         super(FormMediaFiliacion, self).__init__(*args, **kwargs)
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = 'form-control my-2'
 
-        for field_name, field in self.fields.items():
-            field.label = snake_to_spaces(field_name)
-
-        print(kwargs)
-        
-
-
 class FormDatosGeneralesACNID(forms.ModelForm):
-    
     class Meta: # type: ignore
         model = DatosGeneralesACNID
         fields = "__all__"
-        exclude = ['caso']  # Exclude specific fields
+        exclude = ['caso']
         widgets = {
             'fecha_ingreso': forms.SelectDateWidget(attrs={'class': 'form-select date-widget'}),
         }
@@ -101,28 +91,12 @@ class FormDatosGeneralesACNID(forms.ModelForm):
         super(FormDatosGeneralesACNID, self).__init__(*args, **kwargs)
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = 'form-control my-2'
-        
-        print(kwargs)
-
 
 class FormACNID(forms.Form):
-
     def __init__(self, pk=None, *args, **kwargs):
         super(FormACNID, self).__init__(*args, **kwargs)
-        self.formDatosGenerales = FormDatosGeneralesACNID(pk=pk, *args, **kwargs)
-        self.formMediaFiliacion = FormMediaFiliacion(pk=pk, *args, **kwargs)
-        
+        self.formDatosGenerales = FormDatosGeneralesACNID(instance=DatosGeneralesACNID.objects.filter(caso__pk=pk).first(), *args, **kwargs)
+        self.formMediaFiliacion = FormMediaFiliacion(instance=MediaFiliacion.objects.filter(caso__pk=pk).first(), *args, **kwargs)
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = 'form-control my-2'
-        
-        self.pk = kwargs.pop('pk', None)
 
-    def set_data(self, pk):
-        self.pk = pk
-        # Setup DatosGenerales
-        instance = DatosGeneralesACNID.objects.filter(caso__pk=pk)
-        for field_name, field in self.formDatosGenerales.fields.items():
-            if field_name in instance.__dict__:
-                pass
-        
-        # Setup MediaFiliacion

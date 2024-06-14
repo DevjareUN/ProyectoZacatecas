@@ -76,4 +76,5 @@ urlpatterns = [
         path("auth/", views.auth),
         path('', include(router.urls)),
         path('serve-image/<str:filename>/', views.serve_image, name='serve_image'),
+        path("casos_sin_x/", views.casos_sin_dato_x)
         ]

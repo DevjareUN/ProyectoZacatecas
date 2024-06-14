@@ -2,7 +2,6 @@
 {% load static %}
 {% block content %}
 <script src="{% static 'frontend/js/acnid/capture.js' %}" defer></script>
-<script src="{% static 'frontend/js/acnid/capture.js' %}" defer></script>
 
 <style>
 .section {
@@ -20,16 +19,19 @@
 		margin-right: 10px;
 	}
 </style>
-
 <div id="csrf-token" data-csrf-token="{{ csrf_token }}"></div>
 <div class="p-2 m-2 w-100 d-flex justify-content-center">
 	<div class="d-flex flex-column">
+		<div class="d-flex flex-row">
 		<select name="caso" class="form-control my-2" required="" id="id_caso">
 			{% for item in data %}
 			<option value="{{item.pk}}" {% if forloop.first %}selected{% endif %}>{{item}}</option>
 			{% endfor %}
-
 		</select>
+		<button id="openCniBtn" class="btn btn-primary m-2" 
+			data-toggle="modal" data-target="#exampleModalCenter" 
+			onclick="newCniButtonClicked(event)">+</button>
+		</div>
 		<ul class="nav nav-tabs" id="tabList" role="tablist">
 			<li class="nav-item">
 				<a class="nav-link active" id="datosGenerales-tab" 
@@ -50,7 +52,7 @@
 					{% csrf_token %}
 					<form method="post" id="formDatosGeneralesAcnid" novalidate>
 						<div class="d-flex flex-row flex-wrap">
-						{% for field in form.formDatosGenerales %}
+						{% for field in forms.formDatosGeneralesACNID %}
 						<div class="form-group m-2">
 							{{ field.as_field_group }}
 						</div>
@@ -64,7 +66,7 @@
 					{% csrf_token %}
 					<form method="post" id="formMediaFiliacion" novalidate>
 						<div class="d-flex flex-row flex-wrap">
-							{% for field in form.formMediaFiliacion %}
+							{% for field in forms.formMediaFiliacion %}
 							<div class="form-group m-2">
 								{{ field.as_field_group }}
 							</div>
@@ -76,4 +78,7 @@
 			</div>
 	</div>
 </div>
+<!-- load modal component -->
+{% include 'acnid/modal_nuevo_cui.html' %}
+
 {% endblock %}

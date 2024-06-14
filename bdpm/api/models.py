@@ -155,24 +155,23 @@ class Caso(models.Model):
     carpeta_investigacion = models.ForeignKey(CarpetaInvestigacion, on_delete=CASCADE)
     
     year = models.IntegerField(default=timezone.now().year)
-    consecutivo = models.PositiveIntegerField()
+    consecutivo = models.PositiveIntegerField(editable=False)
     region = models.ForeignKey(SedeAcnid, on_delete=CASCADE)
     cni = models.BooleanField(default=False)
-    identificador = models.CharField(max_length=50, blank=True, unique=True)
+    identificador = models.CharField(max_length=50, blank=True, unique=True, editable=False)
 
     class Meta: # type: ignore
-        unique_together = ('year', 'region', 'consecutivo')
+        unique_together = ('year', 'region', 'consecutivo', 'cni')
 
     def save(self, *args, **kwargs):
         if not self.pk:
-            last_record = Caso.objects.filter(year=self.year).order_by('-consecutivo').first()
+            last_record = Caso.objects.filter(year=self.year, cni=self.cni, region=self.region).order_by('-consecutivo').first()
             if last_record:
                 self.consecutivo = last_record.consecutivo + 1
             else:
                 self.consecutivo = 1
         if not self.identificador:
             self.identificador = f"{'CNI' if self.cni else 'CI'} {self.consecutivo}/{self.region}/{self.year}"
-        print(f"Saving: {repr(self)}")
         super(Caso, self).save(*args, **kwargs)
 
     def __str__(self):
@@ -309,12 +308,12 @@ def upload_to(instance, filename):
 class DatosGeneralesACNID(models.Model):
     caso = models.ForeignKey(Caso, on_delete=CASCADE)
 
-    estatus = models.ForeignKey(EstadoActual, on_delete=CASCADE)
+    estatus = models.ForeignKey(EstadoActual, on_delete=CASCADE, default=1)
     no_control_acnid = models.CharField(max_length=100)
     no_control_medleg = models.CharField(max_length=100)
     fecha_ingreso= models.DateField(max_length=100)
-    edad = models.CharField(max_length=100)
-    sexo = models.ForeignKey(Sexo, on_delete=CASCADE)
+    edad = models.CharField(max_length=100, default=10)
+    sexo = models.ForeignKey(Sexo, on_delete=CASCADE, default=1)
     # TODO: SETUP IMAGE SERVING ON VIEWS WITH THE PRIMARY KEY OF THE 'CASO'
     foto_rostro = models.ImageField(upload_to=upload_to, blank=True)
     foto_panoramica = models.ImageField(upload_to=upload_to, blank=True)

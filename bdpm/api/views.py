@@ -1,5 +1,6 @@
 import os
 
+from django.apps import apps
 from django.http.response import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
@@ -14,6 +15,22 @@ from rest_framework import viewsets
 # Create your views here.
 def auth(request):
     return JsonResponse({ "site": "/api/v1/auth", "msg": "API Auth!" })
+
+def casos_sin_dato_x(request):
+    model_name = request.GET.get('model', None)  # Get the model name from the GET parameters
+    
+    if model_name:
+        try:
+            # ModelClass = apps.get_model('api', model_name)
+            casos_sin_x = Caso.objects.filter(**{ f'{model_name.lower()}__isnull': True })
+        except LookupError:
+            casos_sin_x = Caso.objects.none()
+        
+    else:
+        casos_sin_x = Caso.objects.all()
+    
+    casos_sin_x = CasoSerializer(casos_sin_x, many=True)
+    return JsonResponse(casos_sin_x.data, safe=False)
 
 class CatalogobaseViewSet(viewsets.ModelViewSet):
     serializer_class = CatalogoBaseSerializer

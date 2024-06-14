@@ -1,5 +1,5 @@
 from django.http.response import HttpResponse, JsonResponse
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
@@ -70,81 +70,57 @@ class Home(APIView):
 def get_acnid_table_metadata(request):
     return JsonResponse(METADATA_ACNID)
 
+
 class Capture(APIView):
     permission_classes = [IsAuthenticated]  # Ensure the user is authenticated
 
     def get(self, request, *args, **kwargs):
-        if request.user.groups.filter(name = 'medicina_legal').exists():
-            form = FormMedicinaLegal()
-            return render(request, 'medicina_legal/capture.html', { 
-                                                                   "form": form 
-                                                                   })
-        elif request.user.groups.filter(name = 'acnid').exists():
-            form = FormACNID()
-            if 'pk' in kwargs:
-                form = FormACNID(kwargs['pk'])
-
-            return render(request, 'acnid/capture.html', { "data": list(Caso.objects.all()), "form": form })
-        else:
-            return redirect("/login")
+        pk = kwargs.get('pk')
+        forms = {
+            'formMediaFiliacion': FormMediaFiliacion(instance=MediaFiliacion.objects.filter(caso__pk=pk).first()),
+            'formDatosGeneralesACNID': FormDatosGeneralesACNID(instance=DatosGeneralesACNID.objects.filter(caso__pk=pk).first()),
+        }
+        return render(request, 'acnid/capture.html', {"data": list(Caso.objects.all()), "forms": forms})
 
     def post(self, request, *args, **kwargs):
-        if request.user.groups.filter(name='medicina_legal').exists():
-            form = FormMedicinaLegal(request.POST)
-            if form.is_valid():
-                # Process the form data for 'medicina_legal' group
-                # form.cleaned_data['field_name']
-                return redirect('home')  # Replace with your success URL
-        
-        elif request.user.groups.filter(name='acnid').exists():
-            caso_id = request.POST.get('caso')
-            form_datos_generales = FormDatosGeneralesACNID(request.POST, request.FILES)
-            form_media_filiacion = FormMediaFiliacion(request.POST, request.FILES)
-            
-            if form_datos_generales.is_valid():
-                # Process and save form_datos_generales data
-                print(f"Datos generales desde formulario: {form_datos_generales.cleaned_data}")
-                
-                cleaned_data = {}
-                cleaned_data = form_datos_generales.cleaned_data
-                cleaned_data['estatus'] = cleaned_data['estatus'].pk
-                cleaned_data['sexo'] = cleaned_data['sexo'].pk
-                cleaned_data['caso'] = caso_id
+        caso_id = request.POST.get('caso')
+        caso = get_object_or_404(Caso, id=caso_id)
 
-                serializer = DatosGeneralesACNIDSerializer(data=cleaned_data)
-                if serializer.is_valid():
-                    serializer.save()
-                    return JsonResponse({'success': True, 'message': 'Form submitted successfully'})
-                else:
-                    return JsonResponse({'success': False, 'errors': serializer.errors})
-            elif form_media_filiacion.is_valid():
-                print(f"Submitting Media filiacion")
-                # Changing to PKs
-                cleaned_data = {}
-                for key, value in form_datos_generales.cleaned_data.items():
-                    print(f"Replacing cleaned_data[{key}]={value}, with {value.pk}")
-                    cleaned_data[key] = value.pk
+        form_datos_generales = FormDatosGeneralesACNID(request.POST, request.FILES)
+        form_media_filiacion = FormMediaFiliacion(request.POST, request.FILES)
 
-                cleaned_data['caso'] = caso_id 
-                print(f"Cleaned data: {cleaned_data}")
+        if form_datos_generales.is_valid():
+            datos_generales = form_datos_generales.save(commit=False)
+            datos_generales.caso = caso
+            datos_generales.save()
 
-                serializer = MediaFiliacionSerializer(data=cleaned_data)
-                if serializer.is_valid():
-                    serializer.save()
-                    return JsonResponse({'success': True, 'message': 'Form submitted successfully'})
-                else:
-                    return JsonResponse({'success': False, 'errors': serializer.errors})
+            cleaned_data = form_datos_generales.cleaned_data
+            serializer = DatosGeneralesACNIDSerializer(instance=datos_generales, data=cleaned_data)
+            if serializer.is_valid():
+                serializer.save()
+                return JsonResponse({'success': True, 'message': 'Form submitted successfully'})
             else:
-                errors = form_datos_generales.errors if not form_datos_generales.is_valid() else form_media_filiacion.errors
-                return JsonResponse({'success': False, 'errors': errors})
-        else:
-            return redirect("/login")
+                return JsonResponse({'success': False, 'errors': serializer.errors})
 
+        elif form_media_filiacion.is_valid():
+            media_filiacion = form_media_filiacion.save(commit=False)
+            media_filiacion.caso = caso
+            media_filiacion.save()
+
+            cleaned_data = form_media_filiacion.cleaned_data
+            serializer = MediaFiliacionSerializer(instance=media_filiacion, data=cleaned_data)
+            if serializer.is_valid():
+                serializer.save()
+                return JsonResponse({'success': True, 'message': 'Form submitted successfully'})
+            else:
+                return JsonResponse({'success': False, 'errors': serializer.errors})
+    
+        else:
+            errors = {**form_datos_generales.errors, **form_media_filiacion.errors}
+            return JsonResponse({'success': False, 'errors': errors})
+        
         # If the form is invalid, re-render the page with the form
-        if request.user.groups.filter(name='medicina_legal').exists():
-            return render(request, 'medicina_legal/capture.html', {"form": form})
-        elif request.user.groups.filter(name='acnid').exists():
-            return render(request, 'acnid/capture.html', {"form": form})
+        return render(request, 'acnid/capture.html', {"data": list(Caso.objects.all()), "forms": forms})
 
 
 class Lookup(APIView):

@@ -1,5 +1,10 @@
 const csrftoken = document.getElementById('csrf-token').getAttribute('data-csrf-token');
 
+function newCniButtonClicked(e) {
+	console.log("New modal button clicked!")
+	$('#modalNewCni').modal('toggle')
+}
+
 document.getElementById('formDatosGeneralesAcnid').addEventListener('submit', function(e) {
 	console.log("Submitting form DatosGenerales manually!");
 	e.preventDefault();
@@ -21,6 +26,7 @@ document.getElementById('formDatosGeneralesAcnid').addEventListener('submit', fu
 	
 	let casoId = document.getElementById("id_caso").value;
 	formData.append('caso', casoId)
+	console.log(`Appending ${casoId} caso a form`)
 	fetch(form.action, {
 		method: form.method,
 		body: formData,
