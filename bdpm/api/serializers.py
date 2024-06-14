@@ -171,9 +171,163 @@ class DependenciaSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class MediaFiliacionSerializer(serializers.ModelSerializer):
+       
+    alturafrente = serializers.SerializerMethodField()
+    anchurafrente = serializers.SerializerMethodField()
+    formacontornosuperiorfrente = serializers.SerializerMethodField()
+    caracteristicasextraordinariasfrente = serializers.SerializerMethodField()
+    cantidadcabello = serializers.SerializerMethodField()
+    cabellocalvicie = serializers.SerializerMethodField()
+    colorcabello = serializers.SerializerMethodField()
+    calvicie = serializers.SerializerMethodField()
+    nivelcalvicie = serializers.SerializerMethodField()
+    texturacabello = serializers.SerializerMethodField()
+    longitudcabello = serializers.SerializerMethodField()
+    tamanioboca = serializers.SerializerMethodField()
+    labiosboca = serializers.SerializerMethodField()
+    insercionprofundidadojos = serializers.SerializerMethodField()
+    formaojos = serializers.SerializerMethodField()
+    tamanioojos = serializers.SerializerMethodField()
+    colorojos = serializers.SerializerMethodField()
+    formaorejas = serializers.SerializerMethodField()
+    separacionorejas = serializers.SerializerMethodField()
+    tamaniolobuloorejas = serializers.SerializerMethodField()
+    tamanioorejas = serializers.SerializerMethodField()
+    insercionlobuloorejas = serializers.SerializerMethodField()
+    tamanionariz = serializers.SerializerMethodField()
+    perfilnariz = serializers.SerializerMethodField()
+    aletasnariz = serializers.SerializerMethodField()
+    formanariz = serializers.SerializerMethodField()
+    terminacionnariz = serializers.SerializerMethodField()
+    complexion = serializers.SerializerMethodField()
+    aparienciaracial = serializers.SerializerMethodField()
+    colortez = serializers.SerializerMethodField()
+    formarostro = serializers.SerializerMethodField()
+    tipoperfil = serializers.SerializerMethodField()
+    formacejas = serializers.SerializerMethodField()
+    grosorcejas = serializers.SerializerMethodField()
+    bigote = serializers.SerializerMethodField()
+    formamenton = serializers.SerializerMethodField()
+    barba = serializers.SerializerMethodField()
+
     class Meta:
         model = MediaFiliacion
         fields = "__all__"
+    
+    # def get_estatus(self, obj):
+    #    return str(obj.estatus)
+    
+    def get_alturafrente(self, obj):
+        return str(obj.alturafrente)
+
+    def get_anchurafrente(self, obj):
+        return str(obj.anchurafrente)
+
+    def get_formacontornosuperiorfrente(self, obj):
+        return str(obj.formacontornosuperiorfrente)
+
+    def get_caracteristicasextraordinariasfrente(self, obj):
+        return str(obj.caracteristicasextraordinariasfrente)
+
+    def get_cantidadcabello(self, obj):
+        return str(obj.cantidadcabello)
+
+    def get_cabellocalvicie(self, obj):
+        return str(obj.cabellocalvicie)
+
+    def get_colorcabello(self, obj):
+        return str(obj.colorcabello)
+
+    def get_calvicie(self, obj):
+        return str(obj.calvicie)
+
+    def get_nivelcalvicie(self, obj):
+        return str(obj.nivelcalvicie)
+
+    def get_texturacabello(self, obj):
+        return str(obj.texturacabello)
+
+    def get_longitudcabello(self, obj):
+        return str(obj.longitudcabello)
+
+    def get_tamanioboca(self, obj):
+        return str(obj.tamanioboca)
+
+    def get_labiosboca(self, obj):
+        return str(obj.labiosboca)
+
+    def get_insercionprofundidadojos(self, obj):
+        return str(obj.insercionprofundidadojos)
+
+    def get_formaojos(self, obj):
+        return str(obj.formaojos)
+
+    def get_tamanioojos(self, obj):
+        return str(obj.tamanioojos)
+
+    def get_colorojos(self, obj):
+        return str(obj.colorojos)
+
+    def get_formaorejas(self, obj):
+        return str(obj.formaorejas)
+
+    def get_separacionorejas(self, obj):
+        return str(obj.separacionorejas)
+
+    def get_tamaniolobuloorejas(self, obj):
+        return str(obj.tamaniolobuloorejas)
+
+    def get_tamanioorejas(self, obj):
+        return str(obj.tamanioorejas)
+
+    def get_insercionlobuloorejas(self, obj):
+        return str(obj.insercionlobuloorejas)
+
+    def get_tamanionariz(self, obj):
+        return str(obj.tamanionariz)
+
+    def get_perfilnariz(self, obj):
+        return str(obj.perfilnariz)
+
+    def get_aletasnariz(self, obj):
+        return str(obj.aletasnariz)
+
+    def get_formanariz(self, obj):
+        return str(obj.formanariz)
+
+    def get_terminacionnariz(self, obj):
+        return str(obj.terminacionnariz)
+
+    def get_complexion(self, obj):
+        return str(obj.complexion)
+
+    def get_aparienciaracial(self, obj):
+        return str(obj.aparienciaracial)
+
+    def get_colortez(self, obj):
+        return str(obj.colortez)
+
+    def get_formarostro(self, obj):
+        return str(obj.formarostro)
+
+    def get_tipoperfil(self, obj):
+        return str(obj.tipoperfil)
+
+    def get_formacejas(self, obj):
+        return str(obj.formacejas)
+
+    def get_grosorcejas(self, obj):
+        return str(obj.grosorcejas)
+
+    def get_bigote(self, obj):
+        return str(obj.bigote)
+
+    def get_formamenton(self, obj):
+        return str(obj.formamenton)
+
+    def get_barba(self, obj):
+        return str(obj.barba)
+
 
 class DatosGeneralesACNIDSerializer(serializers.ModelSerializer):
 
@@ -193,6 +347,7 @@ class DatosGeneralesACNIDSerializer(serializers.ModelSerializer):
 
     def get_caso(self, obj):
         return str(obj.caso)
+
 
 class DatosCriminalisticaCampoSerializer(serializers.ModelSerializer):
     class Meta:

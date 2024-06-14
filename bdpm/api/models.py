@@ -2,10 +2,14 @@ import os
 
 from django.contrib.auth.models import User
 from django.db import models
+from django.db.models.constraints import UniqueConstraint
 from django.db.models.deletion import CASCADE
+from django.db.models.query_utils import Q
 from django.utils import timezone
 
-# from datetime import datetime
+from datetime import datetime
+# api/models.py
+from django.db import models
 
 # Catalogos
 
@@ -133,6 +137,9 @@ class AgenteMP(models.Model):
     nombres = models.CharField(max_length=100)
     apellidos = models.CharField(max_length=100)
     posicion = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return f"Agente del MP {self.nombres} ({self.posicion})"
 
 class Perito(models.Model):
     nombres = models.CharField(max_length=100)
@@ -143,7 +150,7 @@ class Perito(models.Model):
     departmento = models.ForeignKey(Departamento, related_name='peritos', on_delete=CASCADE)
 
     def __str__(self):
-        return self.numero_empleado
+        return f"Perito {self.numero_empleado}, {self.departmento} ({self.dependencia})"
 
 class CarpetaInvestigacion(models.Model):
     cui = models.CharField(max_length=50, unique=True)
@@ -161,7 +168,14 @@ class Caso(models.Model):
     identificador = models.CharField(max_length=50, blank=True, unique=True, editable=False)
 
     class Meta: # type: ignore
-        unique_together = ('year', 'region', 'consecutivo', 'cni')
+        constraints = [
+            UniqueConstraint(fields=['year', 'region', 'consecutivo'], 
+                             name='unique_year_region_consecutivo_for_cni', 
+                             condition=Q(cni=True)),
+            UniqueConstraint(fields=['year', 'region', 'consecutivo'], 
+                             name='unique_year_region_consecutivo_for_not_cni', 
+                             condition=Q(cni=False)),
+                ]
 
     def save(self, *args, **kwargs):
         if not self.pk:
@@ -220,6 +234,9 @@ class MediaFiliacion(models.Model):
     bigote = models.ForeignKey(Bigote, on_delete=CASCADE, default=1)
     formamenton = models.ForeignKey(FormaMenton, on_delete=CASCADE, default=1)
     barba = models.ForeignKey(Barba, on_delete=CASCADE, default=1)
+    
+    def __str__(self):
+        return f"MediaFiliacion({self.pk}"
 
 
 class CronotanatoDiagnostico(models.Model):
@@ -235,6 +252,9 @@ class CronotanatoDiagnostico(models.Model):
     limite_inferior_pm = models.IntegerField(default=-1)
     limite_superior_pm = models.IntegerField(default=-1)
     valor_exacto_pm = models.IntegerField(default=-1)
+    
+    def __str__(self):
+        return f"Intervalo Post-Mortem ({self.pk}) {self.tipo_intervalo_pm}"
 
 
 class Digitalizador(User):
@@ -260,6 +280,9 @@ class DatosNecropsia(models.Model):
     cronotanatodx = models.ForeignKey(CronotanatoDiagnostico, on_delete=CASCADE)
     estado_preservacion = models.ForeignKey(EstadoPreservacion, on_delete=CASCADE)
     causa_muerte = models.ForeignKey(CausaMuerte, on_delete=CASCADE)
+    
+    def __str__(self):
+        return f"DatosNecropsia({self.pk})"
 
 
 class DatosMedicinaLegal(models.Model):
@@ -287,6 +310,9 @@ class DatosMedicinaLegal(models.Model):
     nombre_occiso = models.CharField(max_length=100)
     sexo = models.ForeignKey(Sexo, on_delete=CASCADE)
     edad = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return f"DatosML({self.pk}, caso={self.caso})"
 
 
 class SolicitudMuestra(models.Model):
@@ -298,6 +324,9 @@ class SolicitudMuestra(models.Model):
     comentarios = models.TextField()
     fecha_solicitud = models.DateField()
     fecha_finalizacion = models.DateField()
+    
+    def __str__(self):
+        return f"SolicitudMuestra({self.pk}, caso={self.caso}, dpto={self.departamento})"
 
 def upload_to(instance, filename):
     caso_value = instance.caso
@@ -315,8 +344,11 @@ class DatosGeneralesACNID(models.Model):
     edad = models.CharField(max_length=100, default=10)
     sexo = models.ForeignKey(Sexo, on_delete=CASCADE, default=1)
     # TODO: SETUP IMAGE SERVING ON VIEWS WITH THE PRIMARY KEY OF THE 'CASO'
-    foto_rostro = models.ImageField(upload_to=upload_to, blank=True)
-    foto_panoramica = models.ImageField(upload_to=upload_to, blank=True)
+    foto_rostro = models.ImageField(upload_to=upload_to, blank=True, null=True)
+    foto_panoramica = models.ImageField(upload_to=upload_to, blank=True, null=True)
+    
+    def __str__(self):
+        return f"DatosGeneralesACNID({self.pk}, caso={self.caso})"
 
 
 class DatosCriminalisticaCampo(models.Model):

@@ -1,0 +1,4 @@
+CREATE USER pgadmin WITH PASSWORD 'admin';
+CREATE DATABASE bdpm OWNER pgadmin;
+GRANT ALL PRIVILEGES ON DATABASE bdpm TO pgadmin;
+

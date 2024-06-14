@@ -1,28 +1,40 @@
-version: "3.8"
-services:
-  postgres:
-    image: postgres
-    restart: always
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_USER: pgadmin
-      POSTGRES_PASSWORD: root
-    volumes:
-      - postgres_data:/opt/sigzif/postgresql/data
-  pgadmin:
-    image: dpage/pgadmin4
-    restart: always
-    ports:
-      - "5050:80"
-    environment:
-      PGADMIN_DEFAULT_EMAIL: devjare@outlook.com
-      PGADMIN_DEFAULT_PASSWORD: root
-    volumes:
-      - pgadmin_data:/var/lib/pgadmin
-    depends_on:
-      - postgres
+version: '3.9'
 
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/opt/postgresql/data
+    environment:
+      - POSTGRES_DB=bdpm
+      - POSTGRES_USER=pgadmin
+      - POSTGRES_PASSWORD=admin
+    ports:
+      - "5433:5433"
+    networks:
+      - sigizac_net
+    command: -p 5433
+  web:
+    image: devjare/sigizac:dev
+    build: ./sigizac
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      - sigizac_net
+    environment:
+      - DEBUG=1
+      - DB_NAME=bdpm
+      - DB_USER=pgadmin
+      - DB_PASSWORD=admin
+      - DB_HOST=db
+      - DB_PORT=5433
 volumes:
   postgres_data:
-  pgadmin_data:
+  media_data:
+networks:
+  sigizac_net:

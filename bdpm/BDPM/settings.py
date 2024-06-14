@@ -13,11 +13,20 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+print("DB_NAME:", os.environ.get('DB_NAME', "bdpm"))
+print("DB_USER:", os.environ.get('DB_USER', "pgadmin"))
+print("DB_PASSWORD:", os.environ.get('DB_PASSWORD', "admin"))
+print("DB_HOST:", os.environ.get('DB_HOST', "localhost"))
+print("DB_PORT:", os.environ.get('DB_PORT', "5432"))
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,9 +38,7 @@ SECRET_KEY = "django-insecure-04@n$l)zpvls05@vr=-o3xy1s#++9l!m_$vg26)$*)amzu5n(y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.100', '*']
-
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -81,17 +88,33 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "BDPM.wsgi.application"
 
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'level': 'DEBUG',
+#             'class': 'logging.StreamHandler',
+#         },
+#     },
+#     'loggers': {
+#         'django.db.backends': {
+#             'level': 'DEBUG',
+#             'handlers': ['console'],
+#         },
+#     },
+# }
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bdpm',
-        'USER': os.getenv("PG_USER", "pgadmin"),
-        'PASSWORD': os.getenv("PG_PASS", "root"),
-        'HOST': 'localhost',  # Set to your database host if it's not on the local machine
-        'PORT': '5432',  # Default PostgreSQL port
+        'NAME': os.environ.get('DB_NAME', "bdpm"),
+        'USER': os.environ.get('DB_USER', "pgadmin"),
+        'PASSWORD': os.environ.get('DB_PASSWORD', "admin"),
+        'HOST': os.environ.get('DB_HOST', "localhost"),
+        'PORT': os.environ.get('DB_PORT', '5432'),
     }
 }
 

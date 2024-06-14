@@ -1,3 +1,4 @@
+from django.forms import ModelForm
 from django.http.response import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib.auth.views import LoginView
@@ -11,7 +12,6 @@ from rest_framework.permissions import IsAuthenticated
 from django.shortcuts import render
 
 from api.serializers import *
-from frontend.forms import FormACNID
 
 from .forms import FormDatosGeneralesACNID, FormMediaFiliacion, FormMedicinaLegal
 
@@ -57,12 +57,11 @@ class Home(APIView):
     # permission_classes = [IsAuthenticated]  # Ensure the user is authenticated
     
     def get(self, request, *args, **kwargs):
-        print(f"User tryng to get /home: {request.user}")
         if request.user.groups.filter(name = 'medicina_legal').exists():
-            return render(request, 'medicina_legal/home.html', {"message": "Hello, ML Admin!, Showing quick info..."})
+            return render(request, 
+                          'medicina_legal/home.html', 
+                          {"message": "Hello, ML Admin!, Showing quick info..."})
         elif request.user.groups.filter(name = 'acnid').exists():
-    # TODO: SETUP IMAGE SERVING ON VIEWS WITH THE PRIMARY KEY OF THE 'CASO'
-
             return render(request, 'acnid/home.html', { "meta": METADATA_ACNID })
         else:
             return redirect("login")
@@ -77,10 +76,26 @@ class Capture(APIView):
     def get(self, request, *args, **kwargs):
         pk = kwargs.get('pk')
         forms = {
-            'formMediaFiliacion': FormMediaFiliacion(instance=MediaFiliacion.objects.filter(caso__pk=pk).first()),
-            'formDatosGeneralesACNID': FormDatosGeneralesACNID(instance=DatosGeneralesACNID.objects.filter(caso__pk=pk).first()),
+            'formDatosGeneralesACNID': FormDatosGeneralesACNID(),
+            'formMediaFiliacion': FormMediaFiliacion()
         }
-        return render(request, 'acnid/capture.html', {"data": list(Caso.objects.all()), "forms": forms})
+        # If a primary key was provided, then fill forms with existing info
+        if pk:
+            datos_generales_acnid_instance = get_object_or_404(DatosGeneralesACNID, pk=pk)
+            caso = datos_generales_acnid_instance.caso
+            media_filiacion_instance = MediaFiliacion.objects.filter(caso=caso).first()
+            forms['formDatosGeneralesACNID'] = FormDatosGeneralesACNID(instance=datos_generales_acnid_instance)
+            forms['formMediaFiliacion'] = FormMediaFiliacion(instance=media_filiacion_instance) if media_filiacion_instance else FormMediaFiliacion()
+
+        context = {
+            "data": list(Caso.objects.all()), 
+            "forms": forms
+        }
+
+        if pk:
+            context['pk'] = pk
+            
+        return render(request, 'acnid/capture.html', context)
 
     def post(self, request, *args, **kwargs):
         caso_id = request.POST.get('caso')
@@ -88,27 +103,34 @@ class Capture(APIView):
 
         form_datos_generales = FormDatosGeneralesACNID(request.POST, request.FILES)
         form_media_filiacion = FormMediaFiliacion(request.POST, request.FILES)
-
+        
         if form_datos_generales.is_valid():
-            datos_generales = form_datos_generales.save(commit=False)
-            datos_generales.caso = caso
-            datos_generales.save()
+            print(f"Creano nuevo registro para datos generales en caso {caso_id}")
+            instance = form_datos_generales.save(commit=False)
+            instance.caso = caso
+            instance.save()
 
-            cleaned_data = form_datos_generales.cleaned_data
-            serializer = DatosGeneralesACNIDSerializer(instance=datos_generales, data=cleaned_data)
+            serializer = DatosGeneralesACNIDSerializer(
+                    instance=instance, 
+                    data=form_datos_generales.cleaned_data, 
+                    partial=True)
             if serializer.is_valid():
                 serializer.save()
-                return JsonResponse({'success': True, 'message': 'Form submitted successfully'})
+                return JsonResponse({
+                    'success': True, 
+                    'message': 'Form submitted successfully' })
             else:
                 return JsonResponse({'success': False, 'errors': serializer.errors})
 
         elif form_media_filiacion.is_valid():
-            media_filiacion = form_media_filiacion.save(commit=False)
-            media_filiacion.caso = caso
-            media_filiacion.save()
+            print(f"Creano nuevo registro para media filiacion en caso {caso_id}")
+            instance = form_media_filiacion.save(commit=False)
+            instance.caso = caso
+            instance.save()
 
-            cleaned_data = form_media_filiacion.cleaned_data
-            serializer = MediaFiliacionSerializer(instance=media_filiacion, data=cleaned_data)
+            serializer = MediaFiliacionSerializer(
+                    instance=instance, 
+                    data=form_media_filiacion.cleaned_data)
             if serializer.is_valid():
                 serializer.save()
                 return JsonResponse({'success': True, 'message': 'Form submitted successfully'})
@@ -118,9 +140,34 @@ class Capture(APIView):
         else:
             errors = {**form_datos_generales.errors, **form_media_filiacion.errors}
             return JsonResponse({'success': False, 'errors': errors})
+    
         
-        # If the form is invalid, re-render the page with the form
-        return render(request, 'acnid/capture.html', {"data": list(Caso.objects.all()), "forms": forms})
+    def put(self, request, *args, **kwargs):
+        pk = kwargs.get('pk')
+        if not pk:
+            return JsonResponse({'success': False, 'message': 'Primary key is required for updating.'}, status=400)
+        
+        datos_generales_acnid_instance = get_object_or_404(DatosGeneralesACNID, pk=pk)
+        caso = datos_generales_acnid_instance.caso
+        media_filiacion_instance = MediaFiliacion.objects.filter(caso=caso).first()
+        
+        serializer_datos_generales = DatosGeneralesACNIDSerializer(datos_generales_acnid_instance, data=request.data, partial=True)
+        serializer_media_filiacion = MediaFiliacionSerializer(media_filiacion_instance, data=request.data, partial=True)
+
+        if serializer_datos_generales.is_valid():
+            serializer_datos_generales.save()
+
+        if serializer_media_filiacion.is_valid():
+            serializer_media_filiacion.save()
+
+        if serializer_datos_generales.errors or serializer_media_filiacion.errors:
+            return JsonResponse({
+                'success': False,
+                'errors': {**serializer_datos_generales.errors, **serializer_media_filiacion.errors}
+            }, status=400)
+
+        return JsonResponse({'success': True, 'message': 'Form updated successfully'})
+
 
 
 class Lookup(APIView):

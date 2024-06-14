@@ -56,6 +56,10 @@ document.getElementById('formMediaFiliacion').addEventListener('submit', functio
 
 	let casoId = document.getElementById("id_caso").value;
 	formData.append('caso', casoId)
+	let pk = document.getElementById("#claveRegistro")
+	if(pk) {
+		formData.append('pk', pk.innerText)
+	}
 	
 	fetch(form.action, {
 		method: form.method,

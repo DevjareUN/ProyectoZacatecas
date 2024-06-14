@@ -41,10 +41,12 @@ router.register(r'datoidentificadorcaso', DatoIdentificadorCasoViewSet, basename
 router.register(r'hipotesisinvestigacion', HipotesisInvestigacionViewSet, basename="HipotesisInvestigacion")
 router.register(r'datosreconocimiento', DatosReconocimientoViewSet, basename="DatosReconocimiento")
 router.register(r'datosoficioautorizacionentrega', DatosOficioAutorizacionEntregaViewSet, basename="DatosOficioAutorizacionEntrega")
+router.register(r'mediafiliacion', MediaFiliacionViewSet, basename="MediaFiliacion")
 
+# Add afterwards: 
 # List your catalogue model names here
 lista_catalogos = [  "IntegridadCadaverica", "EstadoPreservacion", "EstadoMuestra",
-"TipoResguardo", "Municipios", "SedeAcnid", "EstadoActual", "Sexo", "TipoInhumacion",
+"TipoResguardo", "Municipios", "SedeAcnid", "Sexo", "TipoInhumacion", "EstadoActual",
 "IndividuosInhumacion", "RelacionAnatomicaInhumacion", "CircunstanciasExtraordinarias", "AMP_UEI_INV", "DistritoJudicial", "TemporalidadDia",
 "ClasificacionEvento","TipoEvento", "EstadoRepublica", "Paises", "MunicipioZacatecas", "ClimaSitio", "EspacioEspecifico", "AmbienteSitio",
 "ColocacionCPM", "VestimentaCPM", "CircunstanciasCPMHallazgo", "UbicacionCPM", "PosicionCadavericaCPM", "FlexionDelCuerpoCPM",

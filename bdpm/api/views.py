@@ -99,6 +99,9 @@ class SolicitudMuestraViewSet(viewsets.ModelViewSet):
     serializer_class = SolicitudMuestraSerializer
 
 
+class MediaFiliacionViewSet(viewsets.ModelViewSet):
+    queryset = MediaFiliacion.objects.all()
+    serializer_class = MediaFiliacionSerializer
 
 
 class DatosGeneralesACNIDViewSet(viewsets.ModelViewSet):
